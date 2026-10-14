@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+:root {
+  --color-brand-purple: #211078;
+  --color-brand-purple-dark: #14094B;
+  --color-brand-magenta: #EC078A;
+  --color-brand-magenta-dark: #D6067C;
+  --color-brand-lavender: #F5F1FF;
+  --color-brand-pink: #FFF0F8;
+  --color-brand-dark: #17152D;
+  --color-brand-muted: #68677A;
+  --color-brand-border: #EAE7F1;
+}
+
+/* Custom scrollbar for horizontal product sliders & category bar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

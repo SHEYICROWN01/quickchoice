@@ -1,0 +1,8 @@
+{
+  "name": "Quick Choice Telecommunications",
+  "description": "Nigeria's trusted destination for original smartphones, tablets, and accessories. Premium retail & wholesale e-commerce store with nationwide delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
