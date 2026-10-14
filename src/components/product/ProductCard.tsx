@@ -69,6 +69,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           alt={product.images[0]?.alt || product.name}
           className="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300"
           loading="lazy"
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (!target.src.endsWith('hero_smartphones_lineup_1791959963891.jpg')) {
+              target.src = '/images/hero_smartphones_lineup_1791959963891.jpg';
+            }
+          }}
         />
       </div>
 

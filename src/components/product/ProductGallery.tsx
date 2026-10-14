@@ -117,6 +117,12 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
           src={activeImage.url}
           alt={activeImage.alt || productName}
           className="w-full h-full object-contain mix-blend-multiply transition-all duration-300 transform group-hover:scale-103"
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (!target.src.endsWith('hero_smartphones_lineup_1791959963891.jpg')) {
+              target.src = '/images/hero_smartphones_lineup_1791959963891.jpg';
+            }
+          }}
         />
 
         {/* View Indicator Label */}

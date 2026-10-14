@@ -39,6 +39,12 @@ export const PromoBanners: React.FC = () => {
               alt="iPhone 16 Series"
               className="w-full h-44 sm:h-full object-cover rounded-xl group-hover:scale-103 transition-transform duration-500 shadow-md"
               loading="lazy"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.src.endsWith('hero_smartphones_lineup_1791959963891.jpg')) {
+                  target.src = '/images/hero_smartphones_lineup_1791959963891.jpg';
+                }
+              }}
             />
           </div>
         </div>
@@ -76,6 +82,12 @@ export const PromoBanners: React.FC = () => {
               alt="Samsung Galaxy S25 Series"
               className="w-full h-44 sm:h-full object-cover rounded-xl group-hover:scale-103 transition-transform duration-500 shadow-md"
               loading="lazy"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.src.endsWith('hero_smartphones_lineup_1791959963891.jpg')) {
+                  target.src = '/images/hero_smartphones_lineup_1791959963891.jpg';
+                }
+              }}
             />
           </div>
         </div>

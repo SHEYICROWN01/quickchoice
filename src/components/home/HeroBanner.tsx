@@ -175,6 +175,12 @@ export const HeroBanner: React.FC = () => {
                 src={active.image}
                 alt={active.titlePrefix + active.titleHighlight}
                 className="w-full h-full object-cover object-center transition-opacity duration-500 scale-102"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.endsWith('hero_smartphones_lineup_1791959963891.jpg')) {
+                    target.src = '/images/hero_smartphones_lineup_1791959963891.jpg';
+                  }
+                }}
               />
             </div>
           </div>
@@ -217,6 +223,12 @@ export const HeroBanner: React.FC = () => {
                     src={active.image}
                     alt={active.titlePrefix + active.titleHighlight}
                     className="w-full h-full object-cover object-center"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.src.endsWith('hero_smartphones_lineup_1791959963891.jpg')) {
+                        target.src = '/images/hero_smartphones_lineup_1791959963891.jpg';
+                      }
+                    }}
                   />
                 </div>
               </div>
