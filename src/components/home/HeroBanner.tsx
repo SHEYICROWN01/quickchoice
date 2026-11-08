@@ -208,39 +208,33 @@ export const HeroBanner: React.FC = () => {
           </div>
 
           {/* CONTENT CONTAINER (Responsive layout for both desktop and mobile) */}
-          <div className="relative z-10 p-5 sm:p-8 md:p-10 lg:p-14 flex flex-col justify-between">
+          <div className="relative z-10 p-4 sm:p-7 md:p-10 lg:p-14 flex flex-col justify-between">
             {/* Top / Left Content */}
-            <div className="max-w-full md:max-w-[55%] lg:max-w-[50%] space-y-3 sm:space-y-4 text-left">
+            <div className="max-w-full md:max-w-[55%] lg:max-w-[50%] space-y-2.5 sm:space-y-4 text-left">
               {/* Category / Brand Pill Badge */}
               <div>
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider bg-white/10 text-[#0052FF] border border-[#0052FF]/30 backdrop-blur-xs">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider bg-white/10 text-[#38BDF8] border border-[#38BDF8]/30 backdrop-blur-xs">
                   {active.badge.icon && <span>{active.badge.icon}</span>}
                   <span>{active.badge.text}</span>
                 </span>
               </div>
 
               {/* Bold Headline */}
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
+              <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
                 <span>{active.titlePrefix}</span>
-                <span className="text-[#0052FF] drop-shadow-md">
+                <span className="text-[#38BDF8] drop-shadow-sm">
                   {active.titleHighlight}
                 </span>
               </h1>
 
               {/* Subhead / Value Prop */}
-              <p className="text-xs sm:text-sm font-normal text-white/85 leading-relaxed max-w-lg">
+              <p className="text-xs sm:text-sm font-normal text-white/85 leading-relaxed max-w-lg line-clamp-2 sm:line-clamp-none">
                 {active.subhead}
               </p>
 
-              {/* MOBILE UNBOXED ARTWORK (Directly within mobile flow, NO card, NO box, seamlessly alongside background) */}
-              <div className="md:hidden py-2 flex items-center justify-center">
-                <div
-                  className="w-full max-w-[280px] sm:max-w-[340px] aspect-16/10 relative overflow-hidden"
-                  style={{
-                    maskImage: 'radial-gradient(ellipse 90% 85% at 50% 50%, black 50%, transparent 95%)',
-                    WebkitMaskImage: 'radial-gradient(ellipse 90% 85% at 50% 50%, black 50%, transparent 95%)'
-                  }}
-                >
+              {/* MOBILE SHOWCASE ARTWORK (Compact, clean 16:9 frame with crisp edges) */}
+              <div className="md:hidden py-1 w-full flex items-center justify-center">
+                <div className="w-full max-w-[340px] h-36 sm:h-44 rounded-xl overflow-hidden shadow-lg border border-white/15 relative">
                   <img
                     src={active.image}
                     alt={active.titlePrefix + active.titleHighlight}
@@ -255,27 +249,27 @@ export const HeroBanner: React.FC = () => {
                 </div>
               </div>
 
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 pt-2 sm:pt-4">
+              {/* Action Buttons (Side-by-side on mobile, compact & touch-friendly) */}
+              <div className="flex flex-row items-center gap-2 pt-1 sm:pt-4 w-full sm:w-auto">
                 <button
                   onClick={() => navigate(active.primaryCta.route)}
-                  className="px-6 py-3.5 bg-[#0052FF] hover:bg-[#003ECC] active:scale-[0.98] text-white text-xs sm:text-sm font-extrabold rounded-xl shadow-lg shadow-[#0052FF]/40 flex items-center justify-center gap-2 transition-all cursor-pointer"
+                  className="flex-1 sm:flex-none px-3.5 sm:px-6 py-2.5 sm:py-3.5 bg-[#0052FF] hover:bg-[#003ECC] active:scale-[0.98] text-white text-xs sm:text-sm font-bold rounded-xl shadow-md shadow-[#0052FF]/30 flex items-center justify-center gap-1.5 transition-all cursor-pointer truncate"
                 >
-                  <span>{active.primaryCta.label}</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <span className="truncate">{active.primaryCta.label}</span>
+                  <ArrowRight className="w-3.5 h-3.5 shrink-0" />
                 </button>
 
                 <button
                   onClick={() => navigate(active.secondaryCta.route)}
-                  className="px-5 py-3.5 bg-white/10 hover:bg-white/20 active:scale-[0.98] text-white text-xs sm:text-sm font-bold rounded-xl border border-white/20 backdrop-blur-xs transition-all cursor-pointer text-center"
+                  className="flex-1 sm:flex-none px-3 sm:px-5 py-2.5 sm:py-3.5 bg-white/10 hover:bg-white/20 active:scale-[0.98] text-white text-xs sm:text-sm font-semibold rounded-xl border border-white/20 backdrop-blur-xs transition-all cursor-pointer text-center truncate"
                 >
-                  {active.secondaryCta.label}
+                  <span className="truncate">{active.secondaryCta.label}</span>
                 </button>
               </div>
             </div>
 
             {/* Bottom Pagination Indicators */}
-            <div className="pt-6 sm:pt-8 flex items-center justify-between sm:justify-start gap-4">
+            <div className="pt-3 sm:pt-6 flex items-center justify-between sm:justify-start gap-4">
               {/* Dots */}
               <div className="flex items-center gap-2">
                 {slides.map((_, idx) => (
