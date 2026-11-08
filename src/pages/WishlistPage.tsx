@@ -11,17 +11,17 @@ export const WishlistPage: React.FC = () => {
 
   return (
     <div className="bg-[#FAF9FC] min-h-screen pb-20">
-      <div className="bg-white border-b border-[#EAE7F1] py-4 px-4 sm:px-6">
+      <div className="bg-white border-b border-[#DCE6F5] py-4 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div>
-            <div className="flex items-center gap-2 text-xs text-[#68677A] mb-1">
-              <button onClick={() => navigate('/')} className="hover:text-[#EC078A] cursor-pointer">
+            <div className="flex items-center gap-2 text-xs text-[#64748B] mb-1">
+              <button onClick={() => navigate('/')} className="hover:text-[#0052FF] cursor-pointer">
                 Home
               </button>
               <span>&gt;</span>
-              <span className="font-bold text-[#17152D]">Saved Items</span>
+              <span className="font-bold text-[#0A192F]">Saved Items</span>
             </div>
-            <h1 className="text-2xl font-extrabold text-[#17152D] tracking-tight">
+            <h1 className="text-2xl font-extrabold text-[#0A192F] tracking-tight">
               My Wishlist ({wishlistedProducts.length})
             </h1>
           </div>
@@ -36,18 +36,18 @@ export const WishlistPage: React.FC = () => {
             ))}
           </div>
         ) : (
-          <div className="max-w-md mx-auto bg-white rounded-2xl border border-[#EAE7F1] p-10 text-center space-y-4 shadow-xs">
-            <div className="w-16 h-16 rounded-full bg-[#FFF0F8] text-[#EC078A] flex items-center justify-center mx-auto">
+          <div className="max-w-md mx-auto bg-white rounded-2xl border border-[#DCE6F5] p-10 text-center space-y-4 shadow-xs">
+            <div className="w-16 h-16 rounded-full bg-[#E8F2FF] text-[#0052FF] flex items-center justify-center mx-auto">
               <Heart className="w-8 h-8" />
             </div>
-            <h3 className="text-lg font-bold text-[#17152D]">Your Wishlist is Empty</h3>
-            <p className="text-xs text-[#68677A] leading-relaxed">
+            <h3 className="text-lg font-bold text-[#0A192F]">Your Wishlist is Empty</h3>
+            <p className="text-xs text-[#64748B] leading-relaxed">
               Save your favorite phones and accessories here so you can keep track of deals and price changes.
             </p>
             <div className="pt-2">
               <button
                 onClick={() => navigate('/phones')}
-                className="px-6 py-3 bg-[#211078] hover:bg-[#14094B] text-white text-xs font-bold rounded-xl transition-all cursor-pointer"
+                className="px-6 py-3 bg-[#0052FF] hover:bg-[#003ECC] text-white text-xs font-bold rounded-xl transition-all cursor-pointer"
               >
                 Browse Phones Now
               </button>

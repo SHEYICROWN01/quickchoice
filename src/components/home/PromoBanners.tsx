@@ -11,21 +11,21 @@ export const PromoBanners: React.FC = () => {
         {/* Banner 1: iPhone 16 Series */}
         <div
           onClick={() => navigate('/brands/Apple')}
-          className="group relative bg-[#FFF0F8] rounded-2xl p-6 sm:p-8 border border-[#F9D6EA] overflow-hidden flex flex-col justify-between cursor-pointer hover:shadow-lg transition-all duration-300"
+          className="group relative bg-[#F0F6FF] rounded-2xl p-6 sm:p-8 border border-[#DCE6F5] overflow-hidden flex flex-col justify-between cursor-pointer hover:shadow-lg transition-all duration-300"
         >
           <div className="relative z-10 max-w-xs space-y-2">
-            <div className="flex items-center gap-1.5 text-xs font-bold text-[#EC078A] uppercase tracking-wider">
+            <div className="flex items-center gap-1.5 text-xs font-bold text-[#0052FF] uppercase tracking-wider">
               <span></span>
               <span>iPhone 16 Series</span>
             </div>
-            <h3 className="text-xl sm:text-2xl font-black text-[#17152D] leading-tight">
+            <h3 className="text-xl sm:text-2xl font-black text-[#0A192F] leading-tight">
               Bigger Possibilities. <br />Brighter Everyday.
             </h3>
-            <p className="text-xs text-[#68677A] leading-relaxed">
+            <p className="text-xs text-[#64748B] leading-relaxed">
               Super Retina XDR, A18 Pro chip, Grade 5 Titanium design.
             </p>
             <div className="pt-3">
-              <span className="inline-flex items-center gap-1.5 px-4 py-2 bg-white hover:bg-[#EC078A] text-[#EC078A] hover:text-white text-xs font-bold rounded-lg border border-[#EC078A]/30 shadow-xs transition-colors">
+              <span className="inline-flex items-center gap-1.5 px-4 py-2 bg-white hover:bg-[#0052FF] text-[#0052FF] hover:text-white text-xs font-bold rounded-lg border border-[#0052FF]/30 shadow-xs transition-colors">
                 <span>Shop iPhones</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -52,13 +52,13 @@ export const PromoBanners: React.FC = () => {
         {/* Banner 2: Samsung Galaxy S25 Series */}
         <div
           onClick={() => navigate('/brands/Samsung')}
-          className="group relative bg-gradient-to-br from-[#1C0D63] to-[#2B1078] text-white rounded-2xl p-6 sm:p-8 border border-[#211078] overflow-hidden flex flex-col justify-between cursor-pointer hover:shadow-lg transition-all duration-300"
+          className="group relative bg-gradient-to-br from-[#061124] to-[#0A192F] text-white rounded-2xl p-6 sm:p-8 border border-[#0052FF]/40 overflow-hidden flex flex-col justify-between cursor-pointer hover:shadow-lg transition-all duration-300"
         >
-          {/* Subtle neon glow */}
-          <div className="absolute top-0 right-0 w-48 h-48 bg-[#EC078A]/20 rounded-full blur-2xl pointer-events-none" />
+          {/* Subtle blue ambient glow */}
+          <div className="absolute top-0 right-0 w-48 h-48 bg-[#0052FF]/25 rounded-full blur-2xl pointer-events-none" />
 
           <div className="relative z-10 max-w-xs space-y-2">
-            <div className="flex items-center gap-1.5 text-xs font-bold text-[#EC078A] uppercase tracking-wider">
+            <div className="flex items-center gap-1.5 text-xs font-bold text-[#38BDF8] uppercase tracking-wider">
               <span>SAMSUNG</span>
             </div>
             <h3 className="text-xl sm:text-2xl font-black text-white leading-tight">
@@ -68,7 +68,7 @@ export const PromoBanners: React.FC = () => {
               AI for a Smarter Tomorrow. 200MP Quad Cam &amp; Snapdragon 8 Elite.
             </p>
             <div className="pt-3">
-              <span className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#EC078A] hover:bg-[#D6067C] text-white text-xs font-bold rounded-lg shadow-sm transition-colors">
+              <span className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#0052FF] hover:bg-[#003ECC] text-white text-xs font-bold rounded-lg shadow-sm transition-colors">
                 <span>Shop Samsung</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </span>

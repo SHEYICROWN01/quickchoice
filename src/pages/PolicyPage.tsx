@@ -12,8 +12,8 @@ export const PolicyPage: React.FC<PolicyPageProps> = ({ type }) => {
   const contentMap = {
     privacy: {
       title: 'Privacy Policy',
-      icon: <ShieldCheck className="w-6 h-6 text-[#EC078A]" />,
-      lead: 'How Quick Choice Telecommunications safeguards your personal information.',
+      icon: <ShieldCheck className="w-6 h-6 text-[#0052FF]" />,
+      lead: 'How MARKDRE Wholesale & Retail safeguards your personal information.',
       body: [
         {
           heading: '1. Information We Collect',
@@ -21,7 +21,7 @@ export const PolicyPage: React.FC<PolicyPageProps> = ({ type }) => {
         },
         {
           heading: '2. Payment Security',
-          text: 'Quick Choice Telecommunications never collects or stores your credit or debit card numbers on our servers. All online payments are handled directly by PCI-DSS certified payment processors (Paystack and Flutterwave) using SSL encryption.'
+          text: 'MARKDRE Wholesale & Retail never collects or stores your credit or debit card numbers on our servers. All online payments are handled directly by PCI-DSS certified payment processors (Paystack and Flutterwave) using SSL encryption.'
         },
         {
           heading: '3. Data Sharing & Third Parties',
@@ -31,12 +31,12 @@ export const PolicyPage: React.FC<PolicyPageProps> = ({ type }) => {
     },
     terms: {
       title: 'Terms and Conditions',
-      icon: <FileText className="w-6 h-6 text-[#EC078A]" />,
-      lead: 'Guidelines governing retail and wholesale transactions with Quick Choice Telecommunications.',
+      icon: <FileText className="w-6 h-6 text-[#0052FF]" />,
+      lead: 'Guidelines governing retail and wholesale transactions with MARKDRE Wholesale & Retail.',
       body: [
         {
           heading: '1. Genuine Device Guarantee',
-          text: 'Every phone, tablet, and accessory purchased from Quick Choice is guaranteed to be 100% authentic and new, with verified IMEI numbers eligible for official manufacturer support in Nigeria.'
+          text: 'Every phone, tablet, and accessory purchased from MARKDRE is guaranteed to be 100% authentic and new, with verified IMEI numbers eligible for official manufacturer support in Nigeria.'
         },
         {
           heading: '2. Pricing and Availability',
@@ -50,7 +50,7 @@ export const PolicyPage: React.FC<PolicyPageProps> = ({ type }) => {
     },
     shipping: {
       title: 'Shipping, Delivery & Returns Policy',
-      icon: <Truck className="w-6 h-6 text-[#EC078A]" />,
+      icon: <Truck className="w-6 h-6 text-[#0052FF]" />,
       lead: 'Everything you need to know about doorstep delivery and 7-day exchange window.',
       body: [
         {
@@ -59,7 +59,7 @@ export const PolicyPage: React.FC<PolicyPageProps> = ({ type }) => {
         },
         {
           heading: '2. 7-Day Store Return & Replacement',
-          text: 'If your device has a verifiable manufacturer defect within 7 days of receipt, Quick Choice will replace it immediately upon verification, provided the box, accessories, and warranty cards are intact and free from liquid or physical damage.'
+          text: 'If your device has a verifiable manufacturer defect within 7 days of receipt, MARKDRE will replace it immediately upon verification, provided the box, accessories, and warranty cards are intact and free from liquid or physical damage.'
         },
         {
           heading: '3. Manufacturer Official Warranty',
@@ -69,8 +69,8 @@ export const PolicyPage: React.FC<PolicyPageProps> = ({ type }) => {
     },
     help: {
       title: 'Help Center & Support',
-      icon: <HelpCircle className="w-6 h-6 text-[#EC078A]" />,
-      lead: 'Frequently asked questions and direct assistance for Quick Choice customers.',
+      icon: <HelpCircle className="w-6 h-6 text-[#0052FF]" />,
+      lead: 'Frequently asked questions and direct assistance for MARKDRE customers.',
       body: [
         {
           heading: 'How do I place an order online?',
@@ -87,8 +87,8 @@ export const PolicyPage: React.FC<PolicyPageProps> = ({ type }) => {
       ]
     },
     tradein: {
-      title: 'Quick Choice Trade-In & Upgrade Program',
-      icon: <RotateCcw className="w-6 h-6 text-[#EC078A]" />,
+      title: 'MARKDRE Trade-In & Upgrade Program',
+      icon: <RotateCcw className="w-6 h-6 text-[#0052FF]" />,
       lead: 'Exchange your current smartphone for a brand new upgrade with transparent market valuation.',
       body: [
         {
@@ -112,7 +112,7 @@ export const PolicyPage: React.FC<PolicyPageProps> = ({ type }) => {
       {/* Header */}
       <div className="bg-white border-b border-[#EAE7F1] py-8 px-4 sm:px-6 text-center">
         <div className="max-w-2xl mx-auto space-y-2">
-          <div className="w-12 h-12 rounded-full bg-[#FFF0F8] flex items-center justify-center mx-auto mb-2">
+          <div className="w-12 h-12 rounded-full bg-[#E8F2FF] flex items-center justify-center mx-auto mb-2">
             {contentMap.icon}
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-[#17152D] tracking-tight">
@@ -129,7 +129,7 @@ export const PolicyPage: React.FC<PolicyPageProps> = ({ type }) => {
         <div className="bg-white p-6 sm:p-10 rounded-2xl border border-[#EAE7F1] shadow-xs space-y-6">
           {contentMap.body.map((section, idx) => (
             <div key={idx} className="space-y-2 pb-5 border-b border-[#EAE7F1] last:border-0 last:pb-0">
-              <h3 className="text-sm font-bold text-[#211078]">
+              <h3 className="text-sm font-bold text-[#0052FF]">
                 {section.heading}
               </h3>
               <p className="text-xs text-[#68677A] leading-relaxed font-normal">
@@ -140,17 +140,17 @@ export const PolicyPage: React.FC<PolicyPageProps> = ({ type }) => {
         </div>
 
         {/* Quick Contact Footer Strip */}
-        <div className="bg-[#F5F1FF] rounded-2xl p-6 border border-[#EAE7F1] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <div className="bg-[#F0F6FF] rounded-2xl p-6 border border-[#EAE7F1] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
           <div>
             <h4 className="font-bold text-[#17152D]">Still have questions?</h4>
             <p className="text-[#68677A]">Our customer service desk is open 7 days a week.</p>
           </div>
           <button
             onClick={() => navigate('/contact')}
-            className="px-5 py-2.5 bg-[#211078] hover:bg-[#14094B] text-white font-bold rounded-xl flex items-center gap-2 cursor-pointer transition-colors"
+            className="px-5 py-2.5 bg-[#0052FF] hover:bg-[#003ECC] text-white font-bold rounded-xl flex items-center gap-2 cursor-pointer transition-colors"
           >
             <span>Contact Support</span>
-            <ArrowRight className="w-3.5 h-3.5 text-[#EC078A]" />
+            <ArrowRight className="w-3.5 h-3.5 text-[#0052FF]" />
           </button>
         </div>
       </div>

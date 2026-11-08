@@ -7,9 +7,9 @@ export const LatestArticles: React.FC = () => {
   const { navigate } = useShop();
 
   const tagColors: Record<string, string> = {
-    'Buying Guide': 'bg-[#211078] text-white',
+    'Buying Guide': 'bg-[#0052FF] text-white',
     Tips: 'bg-emerald-600 text-white',
-    News: 'bg-[#EC078A] text-white'
+    News: 'bg-[#0052FF] text-white'
   };
 
   return (
@@ -17,19 +17,19 @@ export const LatestArticles: React.FC = () => {
       {/* Header */}
       <div className="flex items-center justify-between pb-6">
         <div className="flex items-center gap-3">
-          <div className="w-1.5 h-6 bg-[#EC078A] rounded-full" />
+          <div className="w-1.5 h-6 bg-[#0052FF] rounded-full" />
           <div>
-            <h2 className="text-xl sm:text-2xl font-extrabold text-[#17152D] tracking-tight">
+            <h2 className="text-xl sm:text-2xl font-extrabold text-[#0A192F] tracking-tight">
               Latest Updates
             </h2>
-            <p className="text-xs text-[#68677A] font-medium hidden sm:block">
+            <p className="text-xs text-[#64748B] font-medium hidden sm:block">
               Buying guides, tech tips, and product insights from our gadget technicians.
             </p>
           </div>
         </div>
         <button
           onClick={() => navigate('/blog')}
-          className="text-xs font-bold text-[#EC078A] hover:text-[#D6067C] flex items-center gap-1 cursor-pointer"
+          className="text-xs font-bold text-[#0052FF] hover:text-[#003ECC] flex items-center gap-1 cursor-pointer"
         >
           <span>View All Articles</span>
           <ArrowRight className="w-3.5 h-3.5" />
@@ -42,11 +42,11 @@ export const LatestArticles: React.FC = () => {
           <div
             key={post.id}
             onClick={() => navigate('/blog')}
-            className="group bg-white rounded-2xl border border-[#EAE7F1] hover:border-[#EC078A]/40 hover:shadow-lg transition-all overflow-hidden flex flex-col justify-between cursor-pointer"
+            className="group bg-white rounded-2xl border border-[#DCE6F5] hover:border-[#0052FF]/40 hover:shadow-lg transition-all overflow-hidden flex flex-col justify-between cursor-pointer"
           >
             <div>
               {/* Image banner with category badge */}
-              <div className="relative aspect-16/9 bg-[#F5F1FF] overflow-hidden">
+              <div className="relative aspect-16/9 bg-[#F0F6FF] overflow-hidden">
                 <img
                   src={post.image}
                   alt={post.title}
@@ -55,7 +55,7 @@ export const LatestArticles: React.FC = () => {
                 />
                 <span
                   className={`absolute top-3 left-3 text-[10px] font-extrabold uppercase px-2.5 py-1 rounded tracking-wider shadow-sm ${
-                    tagColors[post.category] || 'bg-[#211078] text-white'
+                    tagColors[post.category] || 'bg-[#0052FF] text-white'
                   }`}
                 >
                   {post.category}
@@ -64,18 +64,18 @@ export const LatestArticles: React.FC = () => {
 
               {/* Text Body */}
               <div className="p-5">
-                <div className="flex items-center gap-2 text-[11px] text-[#68677A] font-medium mb-2">
+                <div className="flex items-center gap-2 text-[11px] text-[#64748B] font-medium mb-2">
                   <Calendar className="w-3.5 h-3.5" />
                   <span>{post.date}</span>
                   <span>·</span>
                   <span>{post.readTime}</span>
                 </div>
 
-                <h3 className="text-sm sm:text-base font-bold text-[#17152D] group-hover:text-[#EC078A] transition-colors leading-snug line-clamp-2">
+                <h3 className="text-sm sm:text-base font-bold text-[#0A192F] group-hover:text-[#0052FF] transition-colors leading-snug line-clamp-2">
                   {post.title}
                 </h3>
 
-                <p className="text-xs text-[#68677A] mt-2 line-clamp-2 leading-relaxed">
+                <p className="text-xs text-[#64748B] mt-2 line-clamp-2 leading-relaxed">
                   {post.excerpt}
                 </p>
               </div>
@@ -83,7 +83,7 @@ export const LatestArticles: React.FC = () => {
 
             {/* Read More link */}
             <div className="px-5 pb-5 pt-1">
-              <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#EC078A] group-hover:translate-x-1 transition-transform">
+              <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0052FF] group-hover:translate-x-1 transition-transform">
                 <span>Read More</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </span>

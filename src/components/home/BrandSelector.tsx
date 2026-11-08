@@ -22,14 +22,14 @@ export const BrandSelector: React.FC = () => {
       {/* Header */}
       <div className="flex items-center justify-between pb-6">
         <div className="flex items-center gap-3">
-          <div className="w-1.5 h-6 bg-[#EC078A] rounded-full" />
-          <h2 className="text-xl sm:text-2xl font-extrabold text-[#17152D] tracking-tight">
+          <div className="w-1.5 h-6 bg-[#0052FF] rounded-full" />
+          <h2 className="text-xl sm:text-2xl font-extrabold text-[#0A192F] tracking-tight">
             Shop by Brand
           </h2>
         </div>
         <button
           onClick={() => navigate('/brands')}
-          className="text-xs font-bold text-[#EC078A] hover:text-[#D6067C] flex items-center gap-1 cursor-pointer"
+          className="text-xs font-bold text-[#0052FF] hover:text-[#003ECC] flex items-center gap-1 cursor-pointer"
         >
           <span>View All Brands</span>
           <ArrowRight className="w-3.5 h-3.5" />
@@ -42,12 +42,12 @@ export const BrandSelector: React.FC = () => {
           <button
             key={brand.id}
             onClick={() => navigate(`/brands/${brand.id}`)}
-            className="bg-white rounded-xl p-4 border border-[#EAE7F1] hover:border-[#EC078A]/40 hover:shadow-md transition-all flex flex-col items-center justify-center text-center group cursor-pointer aspect-4/3"
+            className="bg-white rounded-xl p-4 border border-[#DCE6F5] hover:border-[#0052FF]/40 hover:shadow-md transition-all flex flex-col items-center justify-center text-center group cursor-pointer aspect-4/3"
           >
-            <span className="text-sm font-extrabold text-[#17152D] group-hover:text-[#EC078A] transition-colors tracking-tight">
+            <span className="text-sm font-extrabold text-[#0A192F] group-hover:text-[#0052FF] transition-colors tracking-tight">
               {brandLogos[brand.name] || brand.name}
             </span>
-            <span className="text-[10px] text-[#68677A] font-medium mt-1">
+            <span className="text-[10px] text-[#64748B] font-medium mt-1">
               {brand.count} devices
             </span>
           </button>

@@ -59,7 +59,7 @@ export const HeroBanner: React.FC = () => {
         route: '/brands/Apple'
       },
       image: '/images/carousel_iphone_neon_rocks_1791962713305.jpg',
-      bgGradient: 'radial-gradient(ellipse at 75% 50%, #2A0952 0%, #150534 45%, #0B021B 100%)'
+      bgGradient: 'radial-gradient(ellipse at 75% 50%, #071A45 0%, #040E28 45%, #020614 100%)'
     },
 
     // Slide 2: Samsung Galaxy S25 Ultra
@@ -80,7 +80,7 @@ export const HeroBanner: React.FC = () => {
         route: '/brands/Samsung'
       },
       image: '/images/carousel_samsung_s25_lineup_1791962713522.jpg',
-      bgGradient: 'radial-gradient(ellipse at 75% 50%, #23084C 0%, #12032E 45%, #090218 100%)'
+      bgGradient: 'radial-gradient(ellipse at 75% 50%, #081B4B 0%, #040E2A 45%, #020614 100%)'
     },
 
     // Slide 3: Wholesale & Bulk Orders
@@ -102,7 +102,29 @@ export const HeroBanner: React.FC = () => {
         route: '/phones'
       },
       image: '/images/carousel_wholesale_boxes_1791962714200.jpg',
-      bgGradient: 'radial-gradient(ellipse at 75% 50%, #260A50 0%, #130432 45%, #0A021C 100%)'
+      bgGradient: 'radial-gradient(ellipse at 75% 50%, #091E52 0%, #05102E 45%, #020614 100%)'
+    },
+
+    // Slide 4: Home Electronics & Appliances
+    {
+      id: 'slide-electronics',
+      badge: {
+        icon: '📺',
+        text: 'ELECTRONICS & HOME APPLIANCES'
+      },
+      titlePrefix: 'Smart TVs, Fridges & ',
+      titleHighlight: 'Inverter ACs',
+      subhead: 'We do not only sell phones! Explore original 4K UHD Smart TVs, Haier Thermocool freezers, and energy-saving copper ACs with official manufacturer warranty.',
+      primaryCta: {
+        label: 'Shop Home Electronics',
+        route: '/categories/electronics'
+      },
+      secondaryCta: {
+        label: 'Explore Smart TVs',
+        route: '/categories/tvs'
+      },
+      image: '/images/electronics_showcase_banner_1792068578161.jpg',
+      bgGradient: 'radial-gradient(ellipse at 75% 50%, #0A2058 0%, #051030 45%, #020614 100%)'
     }
   ];
 
@@ -160,7 +182,7 @@ export const HeroBanner: React.FC = () => {
           onTouchEnd={handleTouchEnd}
         >
           {/* Subtle Ambient Glow Effect */}
-          <div className="absolute top-1/4 right-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-[#EC078A]/15 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-1/4 right-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-[#0052FF]/15 rounded-full blur-3xl pointer-events-none" />
 
           {/* DESKTOP/TABLET UNBOXED ARTWORK (Seamlessly flowing into the background) */}
           <div className="hidden md:flex absolute right-0 top-0 bottom-0 w-[52%] lg:w-[55%] items-center justify-center pointer-events-none overflow-hidden">
@@ -191,7 +213,7 @@ export const HeroBanner: React.FC = () => {
             <div className="max-w-full md:max-w-[55%] lg:max-w-[50%] space-y-3 sm:space-y-4 text-left">
               {/* Category / Brand Pill Badge */}
               <div>
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider bg-white/10 text-[#EC078A] border border-[#EC078A]/30 backdrop-blur-xs">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider bg-white/10 text-[#0052FF] border border-[#0052FF]/30 backdrop-blur-xs">
                   {active.badge.icon && <span>{active.badge.icon}</span>}
                   <span>{active.badge.text}</span>
                 </span>
@@ -200,7 +222,7 @@ export const HeroBanner: React.FC = () => {
               {/* Bold Headline */}
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
                 <span>{active.titlePrefix}</span>
-                <span className="text-[#EC078A] drop-shadow-md">
+                <span className="text-[#0052FF] drop-shadow-md">
                   {active.titleHighlight}
                 </span>
               </h1>
@@ -237,7 +259,7 @@ export const HeroBanner: React.FC = () => {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 pt-2 sm:pt-4">
                 <button
                   onClick={() => navigate(active.primaryCta.route)}
-                  className="px-6 py-3.5 bg-[#EC078A] hover:bg-[#D6067C] active:scale-[0.98] text-white text-xs sm:text-sm font-extrabold rounded-xl shadow-lg shadow-[#EC078A]/40 flex items-center justify-center gap-2 transition-all cursor-pointer"
+                  className="px-6 py-3.5 bg-[#0052FF] hover:bg-[#003ECC] active:scale-[0.98] text-white text-xs sm:text-sm font-extrabold rounded-xl shadow-lg shadow-[#0052FF]/40 flex items-center justify-center gap-2 transition-all cursor-pointer"
                 >
                   <span>{active.primaryCta.label}</span>
                   <ArrowRight className="w-4 h-4" />
@@ -262,7 +284,7 @@ export const HeroBanner: React.FC = () => {
                     onClick={() => setCurrentSlide(idx)}
                     className={`transition-all cursor-pointer ${
                       currentSlide === idx
-                        ? 'w-7 h-2 rounded-full bg-[#EC078A]'
+                        ? 'w-7 h-2 rounded-full bg-[#0052FF]'
                         : 'w-2 h-2 rounded-full bg-white/40 hover:bg-white/70'
                     }`}
                     aria-label={`Slide ${idx + 1}`}
@@ -297,10 +319,10 @@ export const HeroBanner: React.FC = () => {
         </section>
 
         {/* Trust Badges Strip Under Carousel (Hidden on mobile view as requested) */}
-        <div className="hidden md:block bg-[#14094B] text-white rounded-xl py-3 px-4 sm:px-6 mt-3 shadow-sm border border-white/10">
+        <div className="hidden md:block bg-[#0A192F] text-white rounded-xl py-3 px-4 sm:px-6 mt-3 shadow-sm border border-white/10">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-left">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[#EC078A] shrink-0">
+              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[#0052FF] shrink-0">
                 <ShieldCheck className="w-4 h-4" />
               </div>
               <div className="leading-tight">
@@ -310,7 +332,7 @@ export const HeroBanner: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[#EC078A] shrink-0">
+              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[#0052FF] shrink-0">
                 <Truck className="w-4 h-4" />
               </div>
               <div className="leading-tight">
@@ -320,7 +342,7 @@ export const HeroBanner: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[#EC078A] shrink-0">
+              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[#0052FF] shrink-0">
                 <Tag className="w-4 h-4" />
               </div>
               <div className="leading-tight">

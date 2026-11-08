@@ -11,6 +11,9 @@ export const FeaturedPhones: React.FC = () => {
   const filterTabs = ['All', 'iPhones', 'Samsung', 'Tecno', 'Infinix', 'itel', 'Others'];
 
   const filteredProducts = PRODUCTS.filter((product) => {
+    if (['tvs', 'refrigerators', 'appliances', 'electronics', 'air-conditioners'].includes(product.category)) {
+      return false;
+    }
     if (activeBrandFilter === 'All') return true;
     if (activeBrandFilter === 'iPhones') return product.brand === 'Apple';
     if (activeBrandFilter === 'Samsung') return product.brand === 'Samsung';
@@ -29,12 +32,12 @@ export const FeaturedPhones: React.FC = () => {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6">
         {/* Title */}
         <div className="flex items-center gap-3">
-          <div className="w-1.5 h-6 bg-[#EC078A] rounded-full" />
+          <div className="w-1.5 h-6 bg-[#0052FF] rounded-full" />
           <div>
-            <h2 className="text-xl sm:text-2xl font-extrabold text-[#17152D] tracking-tight">
+            <h2 className="text-xl sm:text-2xl font-extrabold text-[#0A192F] tracking-tight">
               Featured Phones
             </h2>
-            <p className="text-xs text-[#68677A] font-medium hidden sm:block">
+            <p className="text-xs text-[#64748B] font-medium hidden sm:block">
               Find the right phone for the way you live, work, and connect.
             </p>
           </div>
@@ -51,8 +54,8 @@ export const FeaturedPhones: React.FC = () => {
                   onClick={() => setActiveBrandFilter(tab)}
                   className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
                     isActive
-                      ? 'bg-[#EC078A] text-white shadow-xs'
-                      : 'bg-[#F5F1FF] text-[#17152D] hover:bg-[#EAE7F1]'
+                      ? 'bg-[#0052FF] text-white shadow-xs'
+                      : 'bg-[#F0F6FF] text-[#0A192F] hover:bg-[#DCE6F5]'
                   }`}
                 >
                   {tab}
@@ -63,7 +66,7 @@ export const FeaturedPhones: React.FC = () => {
 
           <button
             onClick={() => navigate('/phones')}
-            className="text-xs font-bold text-[#EC078A] hover:text-[#D6067C] flex items-center gap-1 shrink-0 ml-auto md:ml-0 cursor-pointer"
+            className="text-xs font-bold text-[#0052FF] hover:text-[#003ECC] flex items-center gap-1 shrink-0 ml-auto md:ml-0 cursor-pointer"
           >
             <span>View All</span>
             <ArrowRight className="w-3.5 h-3.5" />

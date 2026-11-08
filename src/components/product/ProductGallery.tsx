@@ -49,8 +49,8 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
               onClick={() => setSelectedIndex(idx)}
               className={`relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-[#F8F7FA] p-1.5 border-2 transition-all cursor-pointer overflow-hidden shrink-0 ${
                 isSelected
-                  ? 'border-[#EC078A] shadow-md ring-2 ring-[#EC078A]/20'
-                  : 'border-[#EAE7F1] hover:border-[#211078]/30 opacity-80 hover:opacity-100'
+                  ? 'border-[#0052FF] shadow-md ring-2 ring-[#0052FF]/20'
+                  : 'border-[#DCE6F5] hover:border-[#0052FF]/30 opacity-80 hover:opacity-100'
               }`}
               aria-label={`View ${img.label || `Angle ${idx + 1}`}`}
             >
@@ -70,7 +70,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
       </div>
 
       {/* Main Large Image Container */}
-      <div className="relative flex-1 aspect-square sm:aspect-4/3 lg:aspect-square bg-[#F8F7FA] rounded-2xl border border-[#EAE7F1] p-6 sm:p-8 flex items-center justify-center overflow-hidden group">
+      <div className="relative flex-1 aspect-square sm:aspect-4/3 lg:aspect-square bg-[#F8F7FA] rounded-2xl border border-[#DCE6F5] p-6 sm:p-8 flex items-center justify-center overflow-hidden group">
         {/* Top Badges */}
         <div className="absolute top-4 left-4 z-10 flex flex-wrap items-center gap-2">
           {officialBadge && (
@@ -80,7 +80,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
             </span>
           )}
           {tag && (
-            <span className="inline-flex items-center gap-1 bg-[#EC078A] text-white text-[11px] font-extrabold px-3 py-1 rounded-full shadow-xs">
+            <span className="inline-flex items-center gap-1 bg-[#0052FF] text-white text-[11px] font-extrabold px-3 py-1 rounded-full shadow-xs">
               {tag}
             </span>
           )}
@@ -89,27 +89,27 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
         {/* Lightbox Trigger */}
         <button
           onClick={() => setLightboxOpen(true)}
-          className="absolute bottom-4 right-4 z-10 w-9 h-9 rounded-full bg-white/90 hover:bg-white text-[#17152D] shadow-md flex items-center justify-center transition-transform hover:scale-110 cursor-pointer"
+          className="absolute bottom-4 right-4 z-10 w-9 h-9 rounded-full bg-white/90 hover:bg-white text-[#0A192F] shadow-md flex items-center justify-center transition-transform hover:scale-110 cursor-pointer"
           aria-label="Enlarge image"
         >
-          <Maximize2 className="w-4 h-4 text-[#211078]" />
+          <Maximize2 className="w-4 h-4 text-[#0052FF]" />
         </button>
 
         {/* Navigation Arrows */}
         <button
           onClick={handlePrev}
-          className="absolute left-2.5 sm:left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-[#17152D] shadow-md flex items-center justify-center opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity cursor-pointer z-10"
+          className="absolute left-2.5 sm:left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-[#0A192F] shadow-md flex items-center justify-center opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity cursor-pointer z-10"
           aria-label="Previous view"
         >
-          <ChevronLeft className="w-5 h-5 text-[#211078]" />
+          <ChevronLeft className="w-5 h-5 text-[#0052FF]" />
         </button>
 
         <button
           onClick={handleNext}
-          className="absolute right-2.5 sm:right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-[#17152D] shadow-md flex items-center justify-center opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity cursor-pointer z-10"
+          className="absolute right-2.5 sm:right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-[#0A192F] shadow-md flex items-center justify-center opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity cursor-pointer z-10"
           aria-label="Next view"
         >
-          <ChevronRight className="w-5 h-5 text-[#211078]" />
+          <ChevronRight className="w-5 h-5 text-[#0052FF]" />
         </button>
 
         {/* Main Display Image */}
@@ -127,7 +127,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
 
         {/* View Indicator Label */}
         {activeImage.label && (
-          <span className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-xs text-[11px] font-bold text-[#211078] px-2.5 py-1 rounded-md border border-[#EAE7F1]">
+          <span className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-xs text-[11px] font-bold text-[#0052FF] px-2.5 py-1 rounded-md border border-[#DCE6F5]">
             {activeImage.label}
           </span>
         )}

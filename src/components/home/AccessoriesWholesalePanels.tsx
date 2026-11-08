@@ -9,25 +9,25 @@ export const AccessoriesWholesalePanels: React.FC = () => {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Panel 1: Original Accessories */}
-        <div className="bg-[#F8F7FA] rounded-2xl p-6 sm:p-8 border border-[#EAE7F1] flex flex-col justify-between relative overflow-hidden group">
+        <div className="bg-[#F8F7FA] rounded-2xl p-6 sm:p-8 border border-[#DCE6F5] flex flex-col justify-between relative overflow-hidden group">
           <div className="max-w-xs space-y-2 relative z-10">
-            <div className="flex items-center gap-1.5 text-xs font-bold text-[#211078] uppercase tracking-wider">
-              <Headphones className="w-3.5 h-3.5 text-[#EC078A]" />
+            <div className="flex items-center gap-1.5 text-xs font-bold text-[#0052FF] uppercase tracking-wider">
+              <Headphones className="w-3.5 h-3.5 text-[#0052FF]" />
               <span>Premium Add-ons</span>
             </div>
-            <h3 className="text-xl sm:text-2xl font-black text-[#17152D]">
+            <h3 className="text-xl sm:text-2xl font-black text-[#0A192F]">
               Original Accessories
             </h3>
-            <p className="text-xs text-[#68677A] leading-relaxed">
+            <p className="text-xs text-[#64748B] leading-relaxed">
               Chargers · Cables · AirPods · Power Banks · Shockproof Cases &amp; More
             </p>
             <div className="pt-3">
               <button
                 onClick={() => navigate('/accessories')}
-                className="px-5 py-2.5 bg-[#211078] hover:bg-[#14094B] text-white text-xs font-bold rounded-lg flex items-center gap-2 transition-colors cursor-pointer shadow-xs"
+                className="px-5 py-2.5 bg-[#0052FF] hover:bg-[#003ECC] text-white text-xs font-bold rounded-lg flex items-center gap-2 transition-colors cursor-pointer shadow-xs"
               >
                 <span>Shop Accessories</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#EC078A]" />
+                <ArrowRight className="w-3.5 h-3.5 text-white" />
               </button>
             </div>
           </div>
@@ -43,7 +43,7 @@ export const AccessoriesWholesalePanels: React.FC = () => {
         </div>
 
         {/* Panel 2: Wholesale Orders */}
-        <div className="bg-gradient-to-br from-[#EC078A] to-[#C90574] text-white rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden group shadow-md">
+        <div className="bg-gradient-to-br from-[#0052FF] to-[#003ECC] text-white rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden group shadow-md">
           {/* Subtle light effect */}
           <div className="absolute top-0 right-0 w-44 h-44 bg-white/15 rounded-full blur-2xl pointer-events-none" />
 
@@ -61,7 +61,7 @@ export const AccessoriesWholesalePanels: React.FC = () => {
             <div className="pt-3">
               <button
                 onClick={() => navigate('/wholesale')}
-                className="px-5 py-2.5 bg-white hover:bg-[#F5F1FF] text-[#EC078A] text-xs font-extrabold rounded-lg flex items-center gap-2 transition-colors cursor-pointer shadow-md"
+                className="px-5 py-2.5 bg-white hover:bg-[#F0F6FF] text-[#0052FF] text-xs font-extrabold rounded-lg flex items-center gap-2 transition-colors cursor-pointer shadow-md"
               >
                 <span>Get Wholesale Quote</span>
                 <ArrowRight className="w-3.5 h-3.5" />

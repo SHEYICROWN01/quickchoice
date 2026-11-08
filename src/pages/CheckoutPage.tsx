@@ -73,7 +73,7 @@ export const CheckoutPage: React.FC = () => {
 
     // Simulate reliable transaction preparation with clear demonstration status
     setTimeout(() => {
-      const generatedOrderId = `QC-${Math.floor(100000 + Math.random() * 900000)}`;
+      const generatedOrderId = `MD-${Math.floor(100000 + Math.random() * 900000)}`;
       const order = {
         orderId: generatedOrderId,
         date: new Date().toLocaleDateString('en-NG', { dateStyle: 'medium' }),
@@ -116,14 +116,14 @@ export const CheckoutPage: React.FC = () => {
           </div>
 
           <div className="space-y-1">
-            <span className="text-xs font-bold text-[#EC078A] uppercase tracking-wider">
+            <span className="text-xs font-bold text-[#0052FF] uppercase tracking-wider">
               Order Confirmed (Demonstration Mode)
             </span>
             <h2 className="text-2xl font-black text-[#17152D]">
               Thank You, {orderConfirmed.customerName}!
             </h2>
             <p className="text-xs text-[#68677A]">
-              Your order identifier is <strong className="text-[#211078]">{orderConfirmed.orderId}</strong>
+              Your order identifier is <strong className="text-[#0052FF]">{orderConfirmed.orderId}</strong>
             </p>
           </div>
 
@@ -142,31 +142,31 @@ export const CheckoutPage: React.FC = () => {
             </div>
             <div className="flex justify-between py-1 pt-2">
               <span className="text-sm font-bold text-[#17152D]">Total Amount</span>
-              <span className="text-base font-extrabold text-[#211078] tabular-nums">
+              <span className="text-base font-extrabold text-[#0052FF] tabular-nums">
                 {formatNaira(orderConfirmed.total)}
               </span>
             </div>
           </div>
 
-          <div className="p-4 bg-[#FFF0F8] border border-[#F9D6EA] rounded-xl text-left text-xs space-y-1 text-[#68677A]">
-            <p className="font-bold text-[#EC078A] flex items-center gap-1.5">
+          <div className="p-4 bg-[#E8F2FF] border border-[#C7DCFC] rounded-xl text-left text-xs space-y-1 text-[#68677A]">
+            <p className="font-bold text-[#0052FF] flex items-center gap-1.5">
               <Clock className="w-4 h-4" /> Next Steps:
             </p>
             <p>
-              Our fulfillment officers at Quick Choice Ikeja will contact you on <strong>{orderConfirmed.phone}</strong> to confirm invoice particulars before dispatch.
+              Our fulfillment officers at MARKDRE Ikeja will contact you on <strong>{orderConfirmed.phone}</strong> to confirm invoice particulars before dispatch.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 pt-2">
             <button
               onClick={() => navigate(`/track-order?orderId=${orderConfirmed.orderId}`)}
-              className="flex-1 py-3 bg-[#211078] hover:bg-[#14094B] text-white text-xs font-bold rounded-xl transition-colors cursor-pointer"
+              className="flex-1 py-3 bg-[#0052FF] hover:bg-[#003ECC] text-white text-xs font-bold rounded-xl transition-colors cursor-pointer"
             >
               Track Order Status
             </button>
             <button
               onClick={() => navigate('/phones')}
-              className="flex-1 py-3 bg-[#F5F1FF] hover:bg-[#EAE7F1] text-[#211078] text-xs font-bold rounded-xl transition-colors cursor-pointer"
+              className="flex-1 py-3 bg-[#F0F6FF] hover:bg-[#EAE7F1] text-[#0052FF] text-xs font-bold rounded-xl transition-colors cursor-pointer"
             >
               Back to Catalog
             </button>
@@ -182,7 +182,7 @@ export const CheckoutPage: React.FC = () => {
         <h2 className="text-xl font-bold">No items in cart for checkout</h2>
         <button
           onClick={() => navigate('/phones')}
-          className="mt-4 px-6 py-2.5 bg-[#211078] text-white text-xs font-bold rounded-xl"
+          className="mt-4 px-6 py-2.5 bg-[#0052FF] text-white text-xs font-bold rounded-xl"
         >
           Browse Phones
         </button>
@@ -197,7 +197,7 @@ export const CheckoutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div>
             <div className="flex items-center gap-2 text-xs text-[#68677A] mb-1">
-              <button onClick={() => navigate('/cart')} className="hover:text-[#EC078A] cursor-pointer">
+              <button onClick={() => navigate('/cart')} className="hover:text-[#0052FF] cursor-pointer">
                 Cart
               </button>
               <span>&gt;</span>
@@ -220,8 +220,8 @@ export const CheckoutPage: React.FC = () => {
           <div className="lg:col-span-7 space-y-6">
             {/* 1. Customer Contact Details */}
             <div className="bg-white p-6 rounded-2xl border border-[#EAE7F1] shadow-xs space-y-4">
-              <h3 className="text-xs font-extrabold text-[#211078] uppercase tracking-wider flex items-center gap-2">
-                <User className="w-4 h-4 text-[#EC078A]" />
+              <h3 className="text-xs font-extrabold text-[#0052FF] uppercase tracking-wider flex items-center gap-2">
+                <User className="w-4 h-4 text-[#0052FF]" />
                 <span>1. Contact Information</span>
               </h3>
 
@@ -236,7 +236,7 @@ export const CheckoutPage: React.FC = () => {
                     value={formData.fullName}
                     onChange={handleInputChange}
                     placeholder="e.g. Babatunde Adeleke"
-                    className="w-full text-xs bg-[#F8F7FA] border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#EC078A]"
+                    className="w-full text-xs bg-[#F8F7FA] border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#0052FF]"
                     required
                   />
                 </div>
@@ -251,7 +251,7 @@ export const CheckoutPage: React.FC = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     placeholder="e.g. 0801 234 5678"
-                    className="w-full text-xs bg-[#F8F7FA] border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#EC078A]"
+                    className="w-full text-xs bg-[#F8F7FA] border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#0052FF]"
                     required
                   />
                 </div>
@@ -266,7 +266,7 @@ export const CheckoutPage: React.FC = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="e.g. adeleke@gmail.com"
-                    className="w-full text-xs bg-[#F8F7FA] border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#EC078A]"
+                    className="w-full text-xs bg-[#F8F7FA] border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#0052FF]"
                     required
                   />
                 </div>
@@ -275,8 +275,8 @@ export const CheckoutPage: React.FC = () => {
 
             {/* 2. Delivery Method & Destination */}
             <div className="bg-white p-6 rounded-2xl border border-[#EAE7F1] shadow-xs space-y-4">
-              <h3 className="text-xs font-extrabold text-[#211078] uppercase tracking-wider flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-[#EC078A]" />
+              <h3 className="text-xs font-extrabold text-[#0052FF] uppercase tracking-wider flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-[#0052FF]" />
                 <span>2. Delivery Address &amp; Speed</span>
               </h3>
 
@@ -287,13 +287,13 @@ export const CheckoutPage: React.FC = () => {
                   onClick={() => setDeliveryOption('standard')}
                   className={`p-3.5 rounded-xl border text-left transition-all cursor-pointer ${
                     deliveryOption === 'standard'
-                      ? 'border-[#EC078A] bg-[#FFF0F8] ring-1 ring-[#EC078A]'
+                      ? 'border-[#0052FF] bg-[#E8F2FF] ring-1 ring-[#0052FF]'
                       : 'border-[#EAE7F1] bg-[#F8F7FA]'
                   }`}
                 >
                   <span className="text-xs font-bold text-[#17152D] block">Standard Dispatch</span>
                   <span className="text-[10px] text-[#68677A] block mt-0.5">1-3 Days Nationwide</span>
-                  <span className="text-xs font-extrabold text-[#211078] mt-1 block">
+                  <span className="text-xs font-extrabold text-[#0052FF] mt-1 block">
                     {cartTotal >= 200000 ? 'FREE' : '₦4,000'}
                   </span>
                 </button>
@@ -303,13 +303,13 @@ export const CheckoutPage: React.FC = () => {
                   onClick={() => setDeliveryOption('express')}
                   className={`p-3.5 rounded-xl border text-left transition-all cursor-pointer ${
                     deliveryOption === 'express'
-                      ? 'border-[#EC078A] bg-[#FFF0F8] ring-1 ring-[#EC078A]'
+                      ? 'border-[#0052FF] bg-[#E8F2FF] ring-1 ring-[#0052FF]'
                       : 'border-[#EAE7F1] bg-[#F8F7FA]'
                   }`}
                 >
                   <span className="text-xs font-bold text-[#17152D] block">Express Same-Day</span>
                   <span className="text-[10px] text-[#68677A] block mt-0.5">Lagos / Abuja Priority</span>
-                  <span className="text-xs font-extrabold text-[#211078] mt-1 block">₦7,500</span>
+                  <span className="text-xs font-extrabold text-[#0052FF] mt-1 block">₦7,500</span>
                 </button>
 
                 <button
@@ -317,7 +317,7 @@ export const CheckoutPage: React.FC = () => {
                   onClick={() => setDeliveryOption('pickup')}
                   className={`p-3.5 rounded-xl border text-left transition-all cursor-pointer ${
                     deliveryOption === 'pickup'
-                      ? 'border-[#EC078A] bg-[#FFF0F8] ring-1 ring-[#EC078A]'
+                      ? 'border-[#0052FF] bg-[#E8F2FF] ring-1 ring-[#0052FF]'
                       : 'border-[#EAE7F1] bg-[#F8F7FA]'
                   }`}
                 >
@@ -368,7 +368,7 @@ export const CheckoutPage: React.FC = () => {
                       onChange={handleInputChange}
                       placeholder="e.g. 14 Otigba Street, Computer Village or Flat 4, Victoria Island"
                       rows={2}
-                      className="w-full text-xs bg-[#F8F7FA] border border-[#EAE7F1] p-3 rounded-xl outline-none focus:border-[#EC078A]"
+                      className="w-full text-xs bg-[#F8F7FA] border border-[#EAE7F1] p-3 rounded-xl outline-none focus:border-[#0052FF]"
                       required
                     />
                   </div>
@@ -378,8 +378,8 @@ export const CheckoutPage: React.FC = () => {
 
             {/* 3. Payment Method */}
             <div className="bg-white p-6 rounded-2xl border border-[#EAE7F1] shadow-xs space-y-4">
-              <h3 className="text-xs font-extrabold text-[#211078] uppercase tracking-wider flex items-center gap-2">
-                <CreditCard className="w-4 h-4 text-[#EC078A]" />
+              <h3 className="text-xs font-extrabold text-[#0052FF] uppercase tracking-wider flex items-center gap-2">
+                <CreditCard className="w-4 h-4 text-[#0052FF]" />
                 <span>3. Payment Channel</span>
               </h3>
 
@@ -398,7 +398,7 @@ export const CheckoutPage: React.FC = () => {
                   {
                     id: 'bank_transfer',
                     name: 'Direct Corporate Bank Transfer',
-                    desc: 'Transfer directly to Quick Choice Telecommunications Zenith/GTBank accounts'
+                    desc: 'Transfer directly to MARKDRE Wholesale & Retail Zenith/GTBank accounts'
                   },
                   {
                     id: 'delivery',
@@ -411,7 +411,7 @@ export const CheckoutPage: React.FC = () => {
                     onClick={() => setPaymentMethod(item.id as any)}
                     className={`p-3.5 rounded-xl border flex items-center gap-3 cursor-pointer transition-all ${
                       paymentMethod === item.id
-                        ? 'border-[#EC078A] bg-[#FFF0F8]'
+                        ? 'border-[#0052FF] bg-[#E8F2FF]'
                         : 'border-[#EAE7F1] hover:bg-[#F8F7FA]'
                     }`}
                   >
@@ -420,7 +420,7 @@ export const CheckoutPage: React.FC = () => {
                       name="payment_opt"
                       checked={paymentMethod === item.id}
                       onChange={() => setPaymentMethod(item.id as any)}
-                      className="accent-[#EC078A] w-4 h-4"
+                      className="accent-[#0052FF] w-4 h-4"
                     />
                     <div>
                       <span className="text-xs font-bold text-[#17152D] block">{item.name}</span>
@@ -458,7 +458,7 @@ export const CheckoutPage: React.FC = () => {
                       Qty: {item.quantity} {item.selectedStorage ? `· ${item.selectedStorage}` : ''}
                     </p>
                   </div>
-                  <span className="text-xs font-black text-[#211078] tabular-nums">
+                  <span className="text-xs font-black text-[#0052FF] tabular-nums">
                     {formatNaira(item.unitPrice * item.quantity)}
                   </span>
                 </div>
@@ -479,7 +479,7 @@ export const CheckoutPage: React.FC = () => {
               </div>
               <div className="border-t border-[#EAE7F1] pt-3 flex justify-between items-baseline">
                 <span className="text-sm font-extrabold text-[#17152D]">Final Total</span>
-                <span className="text-2xl font-black text-[#211078] tabular-nums">
+                <span className="text-2xl font-black text-[#0052FF] tabular-nums">
                   {formatNaira(totalAmount)}
                 </span>
               </div>
@@ -489,7 +489,7 @@ export const CheckoutPage: React.FC = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-4 bg-[#EC078A] hover:bg-[#D6067C] active:scale-98 disabled:opacity-50 text-white text-xs font-extrabold rounded-xl shadow-lg shadow-[#EC078A]/25 flex items-center justify-center gap-2 transition-all cursor-pointer"
+              className="w-full py-4 bg-[#0052FF] hover:bg-[#003ECC] active:scale-98 disabled:opacity-50 text-white text-xs font-extrabold rounded-xl shadow-lg shadow-[#0052FF]/25 flex items-center justify-center gap-2 transition-all cursor-pointer"
             >
               {isSubmitting ? (
                 <span>Generating Order Reference...</span>
@@ -502,7 +502,7 @@ export const CheckoutPage: React.FC = () => {
             </button>
 
             <p className="text-[10px] text-center text-[#68677A]">
-              By clicking Place Order, you confirm your order with Quick Choice Telecommunications.
+              By clicking Place Order, you confirm your order with MARKDRE Wholesale & Retail.
             </p>
           </div>
         </form>

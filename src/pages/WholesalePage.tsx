@@ -66,18 +66,18 @@ export const WholesalePage: React.FC = () => {
   return (
     <div className="bg-[#FAF9FC] min-h-screen pb-20">
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-[#120738] via-[#1D0C54] to-[#2B0E68] text-white py-14 sm:py-20 px-4 sm:px-6 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#EC078A]/20 rounded-full blur-3xl pointer-events-none" />
+      <section className="bg-gradient-to-br from-[#061124] via-[#0052FF] to-[#0A192F] text-white py-14 sm:py-20 px-4 sm:px-6 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#0052FF]/20 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
           <div className="lg:col-span-7 space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-[#EC078A]">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-[#0052FF]">
               <Building2 className="w-4 h-4" />
               <span>Official B2B &amp; Dealer Procurement</span>
             </div>
 
             <h1 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
-              Nigeria's Leading Wholesale Phone Partner
+              MARKDRE Wholesale Phones, TVs & Electronics Partner
             </h1>
 
             <p className="text-sm sm:text-base text-white/80 max-w-xl leading-relaxed">
@@ -100,7 +100,7 @@ export const WholesalePage: React.FC = () => {
           <div className="lg:col-span-5 flex justify-center">
             <div className="w-full max-w-md bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/15 space-y-3">
               <h3 className="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
-                <Phone className="w-4 h-4 text-[#EC078A]" />
+                <Phone className="w-4 h-4 text-[#0052FF]" />
                 <span>Direct Dealer Hotline</span>
               </h3>
               <p className="text-xs text-white/75">
@@ -109,11 +109,11 @@ export const WholesalePage: React.FC = () => {
               <div className="p-3 bg-white/10 rounded-xl flex items-center justify-between">
                 <div>
                   <p className="text-xs text-white/60">Wholesale Desk</p>
-                  <p className="text-base font-extrabold text-[#EC078A]">+234 801 234 5678</p>
+                  <p className="text-base font-extrabold text-[#0052FF]">+234 801 234 5678</p>
                 </div>
                 <a
                   href="tel:+2348012345678"
-                  className="px-3 py-1.5 bg-[#EC078A] text-white text-xs font-bold rounded-lg"
+                  className="px-3 py-1.5 bg-[#0052FF] text-white text-xs font-bold rounded-lg"
                 >
                   Call Now
                 </a>
@@ -140,9 +140,9 @@ export const WholesalePage: React.FC = () => {
             {steps.map((st) => (
               <div
                 key={st.num}
-                className="bg-white p-6 rounded-2xl border border-[#EAE7F1] shadow-xs space-y-3 relative group hover:border-[#EC078A]/40 transition-all"
+                className="bg-white p-6 rounded-2xl border border-[#EAE7F1] shadow-xs space-y-3 relative group hover:border-[#0052FF]/40 transition-all"
               >
-                <span className="text-2xl font-black text-[#EC078A]/30 group-hover:text-[#EC078A] transition-colors">
+                <span className="text-2xl font-black text-[#0052FF]/30 group-hover:text-[#0052FF] transition-colors">
                   {st.num}
                 </span>
                 <h3 className="text-sm font-bold text-[#17152D]">{st.title}</h3>
@@ -157,7 +157,7 @@ export const WholesalePage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             {/* Form Info (5 cols) */}
             <div className="lg:col-span-5 space-y-4">
-              <span className="text-xs font-extrabold text-[#EC078A] uppercase tracking-wider">
+              <span className="text-xs font-extrabold text-[#0052FF] uppercase tracking-wider">
                 Get Bulk Pricing
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-[#17152D] leading-tight">
@@ -169,15 +169,15 @@ export const WholesalePage: React.FC = () => {
 
               <div className="space-y-3 pt-3">
                 <div className="flex items-start gap-3 text-xs text-[#17152D]">
-                  <CheckCircle2 className="w-4 h-4 text-[#EC078A] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0052FF] shrink-0 mt-0.5" />
                   <span>Transparent carton discount structures</span>
                 </div>
                 <div className="flex items-start gap-3 text-xs text-[#17152D]">
-                  <CheckCircle2 className="w-4 h-4 text-[#EC078A] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0052FF] shrink-0 mt-0.5" />
                   <span>Support for mixed-model and mixed-brand shipments</span>
                 </div>
                 <div className="flex items-start gap-3 text-xs text-[#17152D]">
-                  <CheckCircle2 className="w-4 h-4 text-[#EC078A] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0052FF] shrink-0 mt-0.5" />
                   <span>Full VAT invoice and serial documentation included</span>
                 </div>
               </div>
@@ -198,7 +198,7 @@ export const WholesalePage: React.FC = () => {
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="px-6 py-2.5 bg-[#211078] text-white text-xs font-bold rounded-xl cursor-pointer"
+                    className="px-6 py-2.5 bg-[#0052FF] text-white text-xs font-bold rounded-xl cursor-pointer"
                   >
                     Submit Another Inquiry
                   </button>
@@ -215,7 +215,7 @@ export const WholesalePage: React.FC = () => {
                         value={formData.contactName}
                         onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
                         placeholder="e.g. Chukwuma Obi"
-                        className="w-full text-xs bg-white border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#EC078A]"
+                        className="w-full text-xs bg-white border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#0052FF]"
                         required
                       />
                     </div>
@@ -229,7 +229,7 @@ export const WholesalePage: React.FC = () => {
                         value={formData.businessName}
                         onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
                         placeholder="e.g. Apex Mobile Hub"
-                        className="w-full text-xs bg-white border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#EC078A]"
+                        className="w-full text-xs bg-white border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#0052FF]"
                         required
                       />
                     </div>
@@ -243,7 +243,7 @@ export const WholesalePage: React.FC = () => {
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="e.g. 0802 345 6789"
-                        className="w-full text-xs bg-white border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#EC078A]"
+                        className="w-full text-xs bg-white border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#0052FF]"
                         required
                       />
                     </div>
@@ -257,7 +257,7 @@ export const WholesalePage: React.FC = () => {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="e.g. sales@apexmobile.ng"
-                        className="w-full text-xs bg-white border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#EC078A]"
+                        className="w-full text-xs bg-white border border-[#EAE7F1] px-3.5 py-2.5 rounded-xl outline-none focus:border-[#0052FF]"
                       />
                     </div>
 
@@ -318,14 +318,14 @@ export const WholesalePage: React.FC = () => {
                         onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                         placeholder="List specific models you need (e.g. 5x iPhone 16 Pro Max 256GB, 10x Tecno Camon 30 Pro)..."
                         rows={3}
-                        className="w-full text-xs bg-white border border-[#EAE7F1] p-3 rounded-xl outline-none focus:border-[#EC078A]"
+                        className="w-full text-xs bg-white border border-[#EAE7F1] p-3 rounded-xl outline-none focus:border-[#0052FF]"
                       />
                     </div>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-3.5 bg-[#EC078A] hover:bg-[#D6067C] active:scale-98 text-white text-xs font-extrabold rounded-xl shadow-md transition-all cursor-pointer flex items-center justify-center gap-2"
+                    className="w-full py-3.5 bg-[#0052FF] hover:bg-[#003ECC] active:scale-98 text-white text-xs font-extrabold rounded-xl shadow-md transition-all cursor-pointer flex items-center justify-center gap-2"
                   >
                     <span>Request Wholesale Quote</span>
                     <ArrowRight className="w-4 h-4" />

@@ -139,7 +139,7 @@ export const PRODUCTS: Product[] = [
     deliveryEstimate: '1 to 3 business days nationwide across Nigeria (Same-day delivery available in Lagos)',
     sellersSpeech: {
       headline: "Seller's Speech",
-      intro: "Looking for an original, high-quality iPhone 16 Pro Max at the best price in Nigeria? You're in the right place! At Quick Choice Telecommunications, we offer 100% original Apple products with full warranty, competitive prices, and nationwide delivery.",
+      intro: "Looking for an original, high-quality iPhone 16 Pro Max at the best price in Nigeria? You're in the right place! At MARKDRE, we offer 100% original Apple products with full warranty, competitive prices, and nationwide delivery.",
       bullets: [
         'Brand new and factory sealed device',
         'Comes with official Apple warranty and verification',
@@ -272,7 +272,7 @@ export const PRODUCTS: Product[] = [
     deliveryEstimate: '1-3 business days nationwide (Same-day delivery in Lagos & Abuja)',
     sellersSpeech: {
       headline: "Seller's Speech",
-      intro: "Looking for peak Android productivity and camera mastery? The Samsung Galaxy S25 Ultra at Quick Choice Telecommunications comes with genuine manufacturer warranty and direct factory sourcing.",
+      intro: "Looking for peak Android productivity and camera mastery? The Samsung Galaxy S25 Ultra at MARKDRE comes with genuine manufacturer warranty and direct factory sourcing.",
       bullets: [
         'Brand new Nigerian-spec device with full local network band support',
         'Official 2-year Samsung West Africa warranty with free screen assurance',
@@ -1156,6 +1156,371 @@ export const PRODUCTS: Product[] = [
     deliveryEstimate: '1-3 days nationwide',
     relatedProductIds: ['qc-apple-airpods-pro-2', 'qc-iphone-16-pro-max'],
     isFeatured: true
+  },
+  {
+    id: 'qc-hisense-55-4k-uhd-smart-tv',
+    slug: 'hisense-55-inch-4k-uhd-smart-tv',
+    name: 'Hisense 55" 4K UHD Smart Frameless TV (A6K)',
+    brand: 'Hisense',
+    category: 'tvs',
+    tag: 'Hot',
+    officialBadge: 'Official Hisense 2-Year Warranty',
+    price: 420000,
+    originalPrice: 480000,
+    discountPercentage: 12,
+    rating: 4.9,
+    reviewCount: 84,
+    soldCount: 210,
+    inStock: true,
+    stockCount: 15,
+    shortDescription: '55-inch 4K UHD Bezel-less display, Dolby Vision HDR, VIDAA Smart OS with Netflix, Prime & YouTube, and DTS Virtual:X sound.',
+    fullDescription: 'Immerse yourself in breathtaking 4K entertainment with the Hisense 55-inch A6K Smart TV. Engineered with Precision Colour technology, Dolby Vision HDR, and smooth motion rate, it delivers stunningly realistic colors and contrast. Powered by the swift VIDAA Smart operating system for instant streaming of DSTV Now, Netflix, YouTube, and Prime Video.',
+    images: [
+      {
+        url: '/images/smart_tv_display_1792068523541.jpg',
+        alt: 'Hisense 55-inch 4K UHD Smart Frameless TV Display',
+        label: 'Front Display'
+      },
+      {
+        url: '/images/electronics_showcase_banner_1792068578161.jpg',
+        alt: 'Hisense 55-inch Smart TV living room setup',
+        label: 'Showroom Setup'
+      }
+    ],
+    storageOptions: ['55-Inch', '65-Inch', '75-Inch'],
+    defaultStorage: '55-Inch',
+    colors: [
+      { name: 'Obsidian Black', hex: '#1C1B1F', image: '/images/smart_tv_display_1792068523541.jpg' }
+    ],
+    defaultColor: 'Obsidian Black',
+    specialOffer: 'Special Offer: Free wall mount bracket + HDMI 2.1 cable included 🎁',
+    features: [
+      { icon: 'Tv', title: '4K Ultra HD & Dolby Vision', description: 'Crystal-clear 3840x2160 resolution with dynamic HDR contrast.' },
+      { icon: 'Wifi', title: 'VIDAA Smart OS', description: 'Fast boot, built-in App Store with Netflix, YouTube, Apple TV & DSTV.' },
+      { icon: 'Volume2', title: 'DTS Virtual:X Audio', description: 'Room-filling cinematic spatial audio without external soundbars.' }
+    ],
+    specifications: [
+      {
+        group: 'Display & Audio',
+        items: [
+          { label: 'Screen Size', value: '55 Inches (139 cm)' },
+          { label: 'Resolution', value: '4K UHD (3840 x 2160)' },
+          { label: 'Refresh Rate', value: '60 Hz with Motion Rate 120' },
+          { label: 'Audio Output', value: '2 x 10W with DTS Virtual:X' }
+        ]
+      },
+      {
+        group: 'Connectivity',
+        items: [
+          { label: 'HDMI Ports', value: '3 x HDMI (1 with eARC)' },
+          { label: 'USB Ports', value: '2 x USB 2.0' },
+          { label: 'Wireless', value: 'Dual-band Wi-Fi & Bluetooth 5.0' },
+          { label: 'Voltage', value: 'AC 100-240V, 50/60Hz (Nigeria ready)' }
+        ]
+      }
+    ],
+    boxContents: ['Hisense 55" Smart TV', 'Smart Voice Remote Control', 'AAA Batteries', 'Desktop Stand Legs', 'Power Cord', 'User Manual'],
+    warranty: '2 Years Manufacturer Warranty',
+    deliveryEstimate: '1-2 days within Lagos/Abuja, 2-4 days nationwide',
+    relatedProductIds: ['qc-samsung-65-crystal-uhd-4k-tv', 'qc-scanfrost-1-5hp-copper-inverter-split-ac'],
+    isFeatured: true
+  },
+  {
+    id: 'qc-samsung-65-crystal-uhd-4k-tv',
+    slug: 'samsung-65-inch-crystal-uhd-4k-smart-tv',
+    name: 'Samsung 65" Crystal UHD 4K Smart TV (DU7000)',
+    brand: 'Samsung',
+    category: 'tvs',
+    tag: 'Best Seller',
+    officialBadge: 'Original Samsung Product',
+    price: 980000,
+    originalPrice: 1100000,
+    discountPercentage: 11,
+    rating: 4.8,
+    reviewCount: 62,
+    soldCount: 145,
+    inStock: true,
+    stockCount: 8,
+    shortDescription: '65-inch 4K Crystal processor, PurColor realistic spectrum, Tizen OS, and SmartThings smart home hub.',
+    fullDescription: 'Elevate your living room cinema with the Samsung 65-inch Crystal UHD TV. Featuring Samsung Crystal Processor 4K for precise upscaling, HDR10+ support, and object tracking sound lite. Seamlessly integrates with Samsung Galaxy phones, iPhones via AirPlay 2, and gaming consoles.',
+    images: [
+      {
+        url: '/images/smart_tv_display_1792068523541.jpg',
+        alt: 'Samsung 65" Crystal UHD 4K Smart TV display view',
+        label: 'Front View'
+      },
+      {
+        url: '/images/electronics_showcase_banner_1792068578161.jpg',
+        alt: 'Samsung 65" Smart TV living room setup',
+        label: 'Living Room Setup'
+      }
+    ],
+    storageOptions: ['65-Inch', '75-Inch'],
+    defaultStorage: '65-Inch',
+    colors: [
+      { name: 'Titan Gray', hex: '#2B2B2D', image: '/images/smart_tv_display_1792068523541.jpg' }
+    ],
+    defaultColor: 'Titan Gray',
+    specialOffer: 'Special Offer: Free heavy-duty tilt wall mount + Surge Protector 🎁',
+    features: [
+      { icon: 'Cpu', title: 'Crystal Processor 4K', description: 'Intelligent color upscaling and HDR dynamic tone mapping.' },
+      { icon: 'Tv', title: 'Tizen OS Ecosystem', description: 'Access Netflix, Prime, YouTube, SmartThings, and phone mirroring.' }
+    ],
+    specifications: [
+      {
+        group: 'Display & Features',
+        items: [
+          { label: 'Screen Size', value: '65 Inches' },
+          { label: 'Resolution', value: '4K Ultra HD (3840 x 2160)' },
+          { label: 'Operating System', value: 'Samsung Tizen OS' },
+          { label: 'Sound', value: '20W 2CH with Q-Symphony' }
+        ]
+      }
+    ],
+    boxContents: ['Samsung 65" TV', 'SolarCell Remote Control', 'Power Cable', 'Stand Feet', 'Manual'],
+    warranty: '2 Years Official Samsung Warranty',
+    deliveryEstimate: '1-3 days nationwide',
+    relatedProductIds: ['qc-hisense-55-4k-uhd-smart-tv', 'qc-lg-dual-inverter-1-5hp-split-ac'],
+    isFeatured: true
+  },
+  {
+    id: 'qc-haier-thermocool-200l-double-door-fridge',
+    slug: 'haier-thermocool-200l-double-door-refrigerator',
+    name: 'Haier Thermocool 200L Frost-Free Double Door Refrigerator',
+    brand: 'Haier Thermocool',
+    category: 'refrigerators',
+    tag: 'Hot',
+    officialBadge: 'Official Thermocool 3-Year Warranty',
+    price: 545000,
+    originalPrice: 610000,
+    discountPercentage: 10,
+    rating: 4.9,
+    reviewCount: 96,
+    soldCount: 320,
+    inStock: true,
+    stockCount: 12,
+    shortDescription: '200 Litres total storage, Digital Inverter compressor, low voltage operation down to 135V, and 100 hours frost retention.',
+    fullDescription: 'The Haier Thermocool 200L Double Door Refrigerator is custom-designed for Nigerian power environments. Equipped with high-efficiency inverter cooling that operates smoothly even on generator and low NEPA voltages (135V - 260V). Features 100 hours of cooling retention to keep food fresh during prolonged blackouts.',
+    images: [
+      {
+        url: '/images/refrigerator_freezer_1792068537165.jpg',
+        alt: 'Haier Thermocool 200L Double Door Refrigerator stainless steel view',
+        label: 'Front Exterior'
+      },
+      {
+        url: '/images/electronics_showcase_banner_1792068578161.jpg',
+        alt: 'Haier Thermocool refrigerator in modern kitchen showcase',
+        label: 'Kitchen View'
+      }
+    ],
+    storageOptions: ['200 Litres', '250 Litres', '320 Litres'],
+    defaultStorage: '200 Litres',
+    colors: [
+      { name: 'Brushed Silver', hex: '#A8A9AD', image: '/images/refrigerator_freezer_1792068537165.jpg' }
+    ],
+    defaultColor: 'Brushed Silver',
+    specialOffer: 'Special Offer: Free digital voltage stabilizer included 🎁',
+    features: [
+      { icon: 'ShieldCheck', title: '100 Hours Frost Retention', description: 'Keeps meat, soup, and drinks cold for up to 4 days during power cuts.' },
+      { icon: 'Zap', title: 'Low Voltage Stabilization', description: 'Works reliably on voltage as low as 135V without burning compressor.' },
+      { icon: 'Sparkles', title: 'Toughened Glass Shelves', description: 'Holds heavy Nigerian pots up to 120kg with spill-proof ridges.' }
+    ],
+    specifications: [
+      {
+        group: 'Capacity & Dimensions',
+        items: [
+          { label: 'Total Capacity', value: '200 Litres' },
+          { label: 'Freezer Volume', value: '55 Litres' },
+          { label: 'Refrigerator Volume', value: '145 Litres' },
+          { label: 'Defrost Type', value: 'Total Frost-Free (No manual scraping)' }
+        ]
+      },
+      {
+        group: 'Power & Cooling',
+        items: [
+          { label: 'Voltage Range', value: '135V - 260V Low Voltage Tech' },
+          { label: 'Refrigerant', value: 'Eco-friendly R600a Gas' },
+          { label: 'Compressor Warranty', value: '3 Years Comprehensive' }
+        ]
+      }
+    ],
+    boxContents: ['Haier Thermocool 200L Refrigerator', 'Ice Cube Trays', 'Egg Trays', 'Instruction Manual', 'Warranty Card'],
+    warranty: '3 Years Compressor Warranty & 1 Year General',
+    deliveryEstimate: '1-3 days nationwide safe pallet dispatch',
+    relatedProductIds: ['qc-hisense-198l-chest-freezer', 'qc-scanfrost-1-5hp-copper-inverter-split-ac'],
+    isFeatured: true
+  },
+  {
+    id: 'qc-hisense-198l-chest-freezer',
+    slug: 'hisense-198l-deep-chest-freezer',
+    name: 'Hisense 198L Fast-Freeze Chest Deep Freezer',
+    brand: 'Hisense',
+    category: 'refrigerators',
+    tag: 'Best Seller',
+    officialBadge: 'Original Hisense 2-Year Warranty',
+    price: 365000,
+    originalPrice: 410000,
+    discountPercentage: 11,
+    rating: 4.8,
+    reviewCount: 110,
+    soldCount: 430,
+    inStock: true,
+    stockCount: 24,
+    shortDescription: '198 Litres fast freeze deep chest freezer, anodized aluminum interior, low-noise compressor, and removable basket.',
+    fullDescription: 'The Hisense 198L Chest Deep Freezer delivers ultra-fast blast freezing to lock in nutrients and freshness. Designed with a rust-proof aluminum inner lining that conducts chill rapidly and cleans easily. Includes external temperature thermostat, power indicator lights, and an easy-drain defrost port.',
+    images: [
+      {
+        url: '/images/refrigerator_freezer_1792068537165.jpg',
+        alt: 'Hisense 198L Deep Chest Freezer',
+        label: 'Front View'
+      }
+    ],
+    storageOptions: ['198 Litres', '250 Litres', '350 Litres'],
+    defaultStorage: '198 Litres',
+    colors: [
+      { name: 'Pure White', hex: '#FFFFFF', image: '/images/refrigerator_freezer_1792068537165.jpg' },
+      { name: 'Silver Gray', hex: '#A8A9AD', image: '/images/refrigerator_freezer_1792068537165.jpg' }
+    ],
+    defaultColor: 'Pure White',
+    specialOffer: 'Special Offer: Free heavy-duty multi-guard fridge surge protector 🎁',
+    features: [
+      { icon: 'Zap', title: 'Super Fast Freeze', description: 'Rapid chill technology freezes whole meats and liquids quickly.' },
+      { icon: 'ShieldCheck', title: 'Aluminum Inner Liner', description: 'Hygienic, anti-bacterial, and corrosion-resistant liner for durability.' }
+    ],
+    specifications: [
+      {
+        group: 'Specifications',
+        items: [
+          { label: 'Capacity', value: '198 Litres' },
+          { label: 'Defrost', value: 'Manual with easy drain water hole' },
+          { label: 'Refrigerant', value: 'R600a Ozone-friendly' },
+          { label: 'Door Type', value: 'Top open balanced lid with lock' }
+        ]
+      }
+    ],
+    boxContents: ['Hisense 198L Chest Freezer', 'Removable Wire Basket', 'Keys & Lock', 'Manual'],
+    warranty: '2 Years Manufacturer Warranty',
+    deliveryEstimate: '1-3 days nationwide',
+    relatedProductIds: ['qc-haier-thermocool-200l-double-door-fridge', 'qc-hisense-55-4k-uhd-smart-tv'],
+    isFeatured: true
+  },
+  {
+    id: 'qc-scanfrost-1-5hp-copper-inverter-split-ac',
+    slug: 'scanfrost-1-5hp-copper-inverter-split-ac',
+    name: 'Scanfrost 1.5HP Copper Inverter Split Air Conditioner',
+    brand: 'Scanfrost',
+    category: 'appliances',
+    tag: 'New',
+    officialBadge: '100% Pure Copper Condenser',
+    price: 480000,
+    originalPrice: 530000,
+    discountPercentage: 9,
+    rating: 4.9,
+    reviewCount: 48,
+    soldCount: 180,
+    inStock: true,
+    stockCount: 10,
+    shortDescription: '1.5HP inverter technology, generator mode compatible, 100% pure copper pipes and coils, with turbo rapid cooling.',
+    fullDescription: 'Beat the Nigerian heat with the Scanfrost 1.5HP Inverter Split Air Conditioner. Engineered with an intelligent energy-saving inverter compressor that cuts electricity bills by up to 60%. Equipped with Generator Mode (Gen Mode) that enables cooling even on 2.5kVA to 3kVA generators.',
+    images: [
+      {
+        url: '/images/split_ac_unit_1792068551887.jpg',
+        alt: 'Scanfrost 1.5HP Copper Inverter Split Air Conditioner unit',
+        label: 'Indoor Unit'
+      },
+      {
+        url: '/images/electronics_showcase_banner_1792068578161.jpg',
+        alt: 'Scanfrost air conditioner in luxury modern room',
+        label: 'Room Setup'
+      }
+    ],
+    storageOptions: ['1.5 HP', '2.0 HP'],
+    defaultStorage: '1.5 HP',
+    colors: [
+      { name: 'Arctic White', hex: '#F8F9FA', image: '/images/split_ac_unit_1792068551887.jpg' }
+    ],
+    defaultColor: 'Arctic White',
+    specialOffer: 'Special Offer: Free 3-meter copper installation pipe kit + digital remote 🎁',
+    features: [
+      { icon: 'Zap', title: 'Generator Friendly (Gen Mode)', description: 'Runs safely on standard residential generators without overloading.' },
+      { icon: 'ShieldCheck', title: '100% Pure Copper Condenser', description: 'Maximum heat transfer and superior anti-corrosion protection against humidity.' },
+      { icon: 'Wind', title: '30-Second Rapid Turbo Cool', description: 'High-speed air throw instantly chills large bedrooms and living rooms.' }
+    ],
+    specifications: [
+      {
+        group: 'Cooling & Power',
+        items: [
+          { label: 'Cooling Capacity', value: '12,000 BTU / 1.5 Horsepower' },
+          { label: 'Compressor Type', value: 'Dual Rotary Inverter' },
+          { label: 'Coil Material', value: '100% Pure Copper Condenser' },
+          { label: 'Eco Gas', value: 'R410A / R32 High-efficiency' }
+        ]
+      }
+    ],
+    boxContents: ['Indoor Unit', 'Outdoor Condenser Unit', '3m Pure Copper Pipes', 'Remote Control with Batteries', 'Wall Bracket Kit', 'Manual'],
+    warranty: '2 Years Scanfrost Official Warranty',
+    deliveryEstimate: '1-3 days nationwide',
+    relatedProductIds: ['qc-lg-dual-inverter-1-5hp-split-ac', 'qc-hisense-55-4k-uhd-smart-tv'],
+    isFeatured: true
+  },
+  {
+    id: 'qc-lg-dual-inverter-1-5hp-split-ac',
+    slug: 'lg-dual-inverter-1-5hp-air-conditioner',
+    name: 'LG Dual Inverter 1.5HP Smart Air Conditioner (GenCool)',
+    brand: 'LG',
+    category: 'appliances',
+    tag: 'Hot',
+    officialBadge: 'LG 10-Year Inverter Compressor Warranty',
+    price: 685000,
+    originalPrice: 750000,
+    discountPercentage: 9,
+    rating: 5.0,
+    reviewCount: 74,
+    soldCount: 190,
+    inStock: true,
+    stockCount: 9,
+    shortDescription: '1.5HP Dual Inverter with GenCool 3-step generator control, Gold Fin anti-corrosion protection, and ultra-quiet silent sleep mode.',
+    fullDescription: 'The pinnacle of home climate control: LG 1.5HP Dual Inverter Air Conditioner with GenCool technology. Adjusts power consumption dynamically across 3 steps so you can operate on small generators without stalling. Features LG Gold Fin protection for long-lasting coastal durability and whisper-quiet operation at just 19dB.',
+    images: [
+      {
+        url: '/images/split_ac_unit_1792068551887.jpg',
+        alt: 'LG Dual Inverter 1.5HP Air Conditioner indoor wall unit',
+        label: 'Indoor Unit'
+      },
+      {
+        url: '/images/electronics_showcase_banner_1792068578161.jpg',
+        alt: 'LG air conditioner in contemporary room showcase',
+        label: 'Showroom Setup'
+      }
+    ],
+    storageOptions: ['1.5 HP', '2.0 HP'],
+    defaultStorage: '1.5 HP',
+    colors: [
+      { name: 'Crystal White', hex: '#FFFFFF', image: '/images/split_ac_unit_1792068551887.jpg' }
+    ],
+    defaultColor: 'Crystal White',
+    specialOffer: 'Special Offer: Free installation accessory kit + 10-year compressor warranty certificate 🎁',
+    features: [
+      { icon: 'Zap', title: 'GenCool 3-Step Control', description: 'Run seamlessly on small 2.2kVA generators with intelligent wattage throttling.' },
+      { icon: 'ShieldCheck', title: '10-Year Compressor Warranty', description: 'Industry-leading reliability and durable Gold Fin anti-rust coating.' },
+      { icon: 'Sparkles', title: 'Comfort Air & Auto Clean', description: 'Prevents bacteria/mold build-up while circulating gentle indirect breeze.' }
+    ],
+    specifications: [
+      {
+        group: 'Performance & Engineering',
+        items: [
+          { label: 'Horsepower', value: '1.5 HP (12,000 BTU)' },
+          { label: 'Technology', value: 'LG Dual Inverter Compressor' },
+          { label: 'Energy Savings', value: 'Up to 70% Energy Saving / 40% Faster Cooling' },
+          { label: 'Protection', value: 'Gold Fin Anti-Corrosion Condenser' }
+        ]
+      }
+    ],
+    boxContents: ['LG Indoor Unit', 'LG Outdoor Condenser', 'Smart Remote Control', 'Connecting Cables & Pure Copper Pipes', 'Installation Kit', 'Manual & 10Y Warranty Card'],
+    warranty: '10 Years Inverter Compressor Warranty & 2 Years General',
+    deliveryEstimate: '1-3 days nationwide safe delivery',
+    relatedProductIds: ['qc-scanfrost-1-5hp-copper-inverter-split-ac', 'qc-hisense-55-4k-uhd-smart-tv'],
+    isFeatured: true
   }
 ];
 
@@ -1165,7 +1530,7 @@ export const REVIEWS_DATA: Review[] = [
     userName: 'Aisha Bello',
     rating: 5,
     date: 'Oct 10, 2026',
-    comment: 'Original products and super fast delivery to Abuja! I ordered the iPhone 16 Pro Max and received it sealed with full Apple warranty. Really impressed with Quick Choice customer service.',
+    comment: 'Original products and super fast delivery to Abuja! I ordered the iPhone 16 Pro Max and received it sealed with full Apple warranty. Really impressed with MARKDRE customer service.',
     verified: true
   },
   {
@@ -1173,7 +1538,7 @@ export const REVIEWS_DATA: Review[] = [
     userName: 'Emeka Johnson',
     rating: 5,
     date: 'Oct 08, 2026',
-    comment: 'Best phone store in Nigeria. I have a phone accessories store in Ikeja Computer Village and buy in wholesale cartons from Quick Choice. Their prices are the most competitive and stock is always genuine.',
+    comment: 'Best phone store in Nigeria. I have a phone accessories store in Ikeja Computer Village and buy in wholesale cartons from MARKDRE. Their prices are the most competitive and stock is always genuine.',
     verified: true
   },
   {
@@ -1196,25 +1561,28 @@ export const REVIEWS_DATA: Review[] = [
 
 export const CATEGORIES = [
   { id: 'smartphones', name: 'Smartphones', count: 12, icon: 'Smartphone', image: '/images/hero_smartphones_lineup_1791959963891.jpg' },
+  { id: 'electronics', name: 'Electronics & TVs', count: 5, icon: 'Tv', image: '/images/smart_tv_display_1792068523541.jpg' },
+  { id: 'tvs', name: 'Smart TVs', count: 4, icon: 'Tv', image: '/images/smart_tv_display_1792068523541.jpg' },
+  { id: 'refrigerators', name: 'Fridges & Freezers', count: 4, icon: 'Refrigerator', image: '/images/refrigerator_freezer_1792068537165.jpg' },
+  { id: 'appliances', name: 'Air Conditioners', count: 3, icon: 'Wind', image: '/images/split_ac_unit_1792068551887.jpg' },
   { id: 'iphones', name: 'iPhones', count: 5, icon: 'Apple', image: '/images/iphone_16_front_1791959991199.jpg' },
-  { id: 'samsung', name: 'Samsung', count: 4, icon: 'Smartphone', image: '/images/phone_samsung_s25_ultra_1791960020151.jpg' },
-  { id: 'tecno', name: 'Tecno', count: 3, icon: 'Smartphone', image: '/images/phone_tecno_camon30_1791960020075.jpg' },
-  { id: 'infinix', name: 'Infinix', count: 3, icon: 'Smartphone', image: '/images/phone_infinix_zero40_1791960020743.jpg' },
-  { id: 'itel', name: 'itel', count: 2, icon: 'Smartphone', image: '/images/phone_itel_s24_1791960021068.jpg' },
-  { id: 'tablets', name: 'Tablets', count: 2, icon: 'Tablet', image: '/images/hero_smartphones_lineup_1791959963891.jpg' },
+  { id: 'samsung', name: 'Samsung', count: 5, icon: 'Smartphone', image: '/images/phone_samsung_s25_ultra_1792068523541.jpg' },
+  { id: 'tecno', name: 'Tecno & Infinix', count: 6, icon: 'Smartphone', image: '/images/phone_tecno_camon30_1791960020075.jpg' },
   { id: 'accessories', name: 'Accessories', count: 6, icon: 'Headphones', image: '/images/banner_accessories_collection_1791959966326.jpg' },
-  { id: 'deals', name: 'Deals', count: 8, icon: 'Percent', isSpecial: true }
+  { id: 'deals', name: 'Deals', count: 12, icon: 'Percent', isSpecial: true }
 ];
 
 export const BRANDS = [
   { id: 'Apple', name: 'Apple', count: 5, badge: 'Official Lineup' },
-  { id: 'Samsung', name: 'Samsung', count: 4, badge: 'Galaxy Series' },
+  { id: 'Samsung', name: 'Samsung', count: 5, badge: 'Phones & TVs' },
+  { id: 'Hisense', name: 'Hisense', count: 2, badge: '4K TVs & Freezers' },
+  { id: 'LG', name: 'LG', count: 1, badge: 'Dual Inverter ACs' },
+  { id: 'Haier Thermocool', name: 'Thermocool', count: 1, badge: 'Fridges & Freezers' },
+  { id: 'Scanfrost', name: 'Scanfrost', count: 1, badge: 'Copper ACs' },
   { id: 'Tecno', name: 'Tecno', count: 3, badge: 'Camon & Phantom' },
   { id: 'Infinix', name: 'Infinix', count: 3, badge: 'Zero & Note' },
   { id: 'itel', name: 'itel', count: 2, badge: 'Value Series' },
-  { id: 'Xiaomi', name: 'Xiaomi', count: 2, badge: 'Redmi & Flagships' },
-  { id: 'Google', name: 'Google', count: 1, badge: 'Pixel Series' },
-  { id: 'Others', name: 'Others', count: 4, badge: 'Nothing & Anker' }
+  { id: 'Xiaomi', name: 'Xiaomi', count: 2, badge: 'Redmi & Flagships' }
 ];
 
 export const BLOG_POSTS = [

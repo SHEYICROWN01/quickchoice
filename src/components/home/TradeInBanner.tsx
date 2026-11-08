@@ -14,19 +14,19 @@ export const TradeInBanner: React.FC = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
-      <div className="bg-gradient-to-r from-[#F5F1FF] via-[#FFF0F8] to-[#F5F1FF] rounded-2xl border border-[#EAE7F1] p-6 sm:p-8 lg:p-10 relative overflow-hidden shadow-xs">
+      <div className="bg-gradient-to-r from-[#F0F6FF] via-[#E8F2FF] to-[#F0F6FF] rounded-2xl border border-[#DCE6F5] p-6 sm:p-8 lg:p-10 relative overflow-hidden shadow-xs">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Visual Showcase */}
           <div className="lg:col-span-5 order-2 lg:order-1 flex justify-center">
-            <div className="relative w-full max-w-sm aspect-16/10 rounded-xl overflow-hidden shadow-lg border border-[#EAE7F1]">
+            <div className="relative w-full max-w-sm aspect-16/10 rounded-xl overflow-hidden shadow-lg border border-[#DCE6F5]">
               <img
                 src="/images/banner_tradein_upgrade_1791959966069.jpg"
                 alt="Trade In and Upgrade Phones"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex items-end p-3">
-                <span className="text-[11px] font-bold text-white bg-[#EC078A] px-2.5 py-1 rounded-md">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end p-3">
+                <span className="text-[11px] font-bold text-white bg-[#0052FF] px-2.5 py-1 rounded-md">
                   Exchange &amp; Save
                 </span>
               </div>
@@ -35,23 +35,23 @@ export const TradeInBanner: React.FC = () => {
 
           {/* Copy & Benefits */}
           <div className="lg:col-span-7 order-1 lg:order-2 space-y-4">
-            <div className="flex items-center gap-2 text-xs font-bold text-[#EC078A] uppercase tracking-wider">
-              <RefreshCw className="w-4 h-4 text-[#EC078A]" />
-              <span>Quick Choice Upgrade Program</span>
+            <div className="flex items-center gap-2 text-xs font-bold text-[#0052FF] uppercase tracking-wider">
+              <RefreshCw className="w-4 h-4 text-[#0052FF]" />
+              <span>MARKDRE Upgrade Program</span>
             </div>
 
-            <h3 className="text-2xl sm:text-3xl font-extrabold text-[#17152D] leading-tight">
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0A192F] leading-tight">
               Trade In &amp; Upgrade
             </h3>
 
-            <p className="text-sm text-[#68677A] leading-relaxed max-w-xl">
-              Exchange your old phone for a new device at genuine market value. Bring your device to our Ikeja store or request a remote pickup anywhere in Lagos.
+            <p className="text-sm text-[#64748B] leading-relaxed max-w-xl">
+              Exchange your old smartphone for a brand new phone or 4K Smart TV at genuine market valuation. Bring your device to our Ikeja mega hub or request remote valuation anywhere in Lagos.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
               {benefits.map((item, idx) => (
-                <div key={idx} className="flex items-center gap-2 text-xs font-semibold text-[#17152D]">
-                  <CheckCircle2 className="w-4 h-4 text-[#211078] shrink-0" />
+                <div key={idx} className="flex items-center gap-2 text-xs font-semibold text-[#0A192F]">
+                  <CheckCircle2 className="w-4 h-4 text-[#0052FF] shrink-0" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -60,10 +60,10 @@ export const TradeInBanner: React.FC = () => {
             <div className="pt-3">
               <button
                 onClick={() => navigate('/trade-in')}
-                className="px-6 py-3 bg-[#211078] hover:bg-[#14094B] text-white text-xs font-bold rounded-xl flex items-center gap-2 transition-all cursor-pointer shadow-sm"
+                className="px-6 py-3 bg-[#0052FF] hover:bg-[#003ECC] text-white text-xs font-bold rounded-xl flex items-center gap-2 transition-all cursor-pointer shadow-sm"
               >
-                <span>Learn More &amp; Value Your Phone</span>
-                <ArrowRight className="w-4 h-4 text-[#EC078A]" />
+                <span>Learn More &amp; Value Your Device</span>
+                <ArrowRight className="w-4 h-4 text-white" />
               </button>
             </div>
           </div>

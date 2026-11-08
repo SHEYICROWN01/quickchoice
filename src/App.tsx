@@ -77,35 +77,35 @@ const AppContent: React.FC = () => {
         return <PolicyPage type="tradein" />;
       case '/account':
         return (
-          <div className="bg-[#FAF9FC] min-h-[60vh] py-16 px-4 flex items-center justify-center">
-            <div className="max-w-md w-full bg-white p-8 rounded-2xl border border-[#EAE7F1] text-center space-y-4 shadow-sm">
-              <div className="w-12 h-12 rounded-full bg-[#FFF0F8] text-[#EC078A] flex items-center justify-center mx-auto text-xl font-bold">
+          <div className="bg-[#F8FAFC] min-h-[60vh] py-16 px-4 flex items-center justify-center">
+            <div className="max-w-md w-full bg-white p-8 rounded-2xl border border-[#DCE6F5] text-center space-y-4 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-[#E8F2FF] text-[#0052FF] flex items-center justify-center mx-auto text-xl font-bold">
                 👤
               </div>
-              <h2 className="text-xl font-bold text-[#17152D]">Quick Choice Account Portal</h2>
-              <p className="text-xs text-[#68677A]">
+              <h2 className="text-xl font-bold text-[#0A192F]">MARKDRE Account Portal</h2>
+              <p className="text-xs text-[#64748B]">
                 Customer accounts and wholesale buyer login portal. (Demonstration Mode)
               </p>
               <div className="space-y-3 pt-2 text-left text-xs">
                 <div>
-                  <label className="block font-bold text-[#17152D] mb-1">Email or Phone</label>
+                  <label className="block font-bold text-[#0A192F] mb-1">Email or Phone</label>
                   <input
                     type="text"
                     placeholder="e.g. adeshile@gmail.com or 08012345678"
-                    className="w-full p-2.5 bg-[#F8F7FA] border border-[#EAE7F1] rounded-lg outline-none"
+                    className="w-full p-2.5 bg-[#F8FAFC] border border-[#DCE6F5] rounded-lg outline-none focus:border-[#0052FF]"
                   />
                 </div>
                 <div>
-                  <label className="block font-bold text-[#17152D] mb-1">Password / OTP</label>
+                  <label className="block font-bold text-[#0A192F] mb-1">Password / OTP</label>
                   <input
                     type="password"
                     placeholder="••••••••"
-                    className="w-full p-2.5 bg-[#F8F7FA] border border-[#EAE7F1] rounded-lg outline-none"
+                    className="w-full p-2.5 bg-[#F8FAFC] border border-[#DCE6F5] rounded-lg outline-none focus:border-[#0052FF]"
                   />
                 </div>
                 <button
                   type="button"
-                  className="w-full py-2.5 bg-[#211078] hover:bg-[#14094B] text-white font-bold rounded-lg transition-colors cursor-pointer"
+                  className="w-full py-2.5 bg-[#0052FF] hover:bg-[#003ECC] text-white font-bold rounded-lg transition-colors cursor-pointer shadow-sm"
                 >
                   Sign In
                 </button>
@@ -120,7 +120,7 @@ const AppContent: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen text-[#17152D]">
+    <div className="flex flex-col min-h-screen text-[#0A192F]">
       <Header />
       <div className="flex-1">
         {renderCurrentPage()}

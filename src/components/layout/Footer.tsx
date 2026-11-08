@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#14094B] text-white pt-16 pb-12 relative border-t border-white/10">
+    <footer className="bg-[#0A192F] text-white pt-16 pb-12 relative border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Main 5-Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
               <Logo variant="white" size="md" />
             </button>
             <p className="text-xs text-white/75 leading-relaxed">
-              Your trusted partner for original phones, accessories and more. Wholesale & Retail across Nigeria.
+              Your trusted partner for original smartphones, Smart TVs, inverter refrigerators, and electronics. Wholesale & Retail across Nigeria.
             </p>
             {/* Social Links */}
             <div className="flex items-center gap-3 pt-2">
@@ -51,7 +51,7 @@ export const Footer: React.FC = () => {
                 href="#facebook"
                 aria-label="Facebook"
                 onClick={(e) => e.preventDefault()}
-                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#EC078A] text-white flex items-center justify-center transition-colors"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#0052FF] text-white flex items-center justify-center transition-colors"
               >
                 <Facebook className="w-4 h-4" />
               </a>
@@ -59,7 +59,7 @@ export const Footer: React.FC = () => {
                 href="#instagram"
                 aria-label="Instagram"
                 onClick={(e) => e.preventDefault()}
-                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#EC078A] text-white flex items-center justify-center transition-colors"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#0052FF] text-white flex items-center justify-center transition-colors"
               >
                 <Instagram className="w-4 h-4" />
               </a>
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
                 href="#x"
                 aria-label="X / Twitter"
                 onClick={(e) => e.preventDefault()}
-                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#EC078A] text-white flex items-center justify-center transition-colors"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#0052FF] text-white flex items-center justify-center transition-colors"
               >
                 <Twitter className="w-4 h-4" />
               </a>
@@ -75,7 +75,7 @@ export const Footer: React.FC = () => {
                 href="#youtube"
                 aria-label="YouTube"
                 onClick={(e) => e.preventDefault()}
-                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#EC078A] text-white flex items-center justify-center transition-colors"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#0052FF] text-white flex items-center justify-center transition-colors"
               >
                 <Youtube className="w-4 h-4" />
               </a>
@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
                   Home
                 </button>
@@ -97,15 +97,23 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/phones')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
                   Phones
                 </button>
               </li>
               <li>
                 <button
+                  onClick={() => navigate('/categories/electronics')}
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
+                >
+                  Electronics & TVs
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => navigate('/accessories')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
                   Accessories
                 </button>
@@ -113,7 +121,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/brands')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
                   Brands
                 </button>
@@ -121,33 +129,25 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/deals')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
-                  Deals
+                  Deals & Offers
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => navigate('/wholesale')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
-                  Wholesale
+                  Wholesale Supply
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => navigate('/about')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
-                  About Us
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => navigate('/contact')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
-                >
-                  Contact Us
+                  About MARKDRE
                 </button>
               </li>
             </ul>
@@ -160,7 +160,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/help')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
                   Help Center
                 </button>
@@ -168,7 +168,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/track-order')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
                   Track Order
                 </button>
@@ -176,7 +176,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/shipping-returns')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
                   Shipping & Delivery
                 </button>
@@ -184,7 +184,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/shipping-returns')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
                   Returns & Refunds
                 </button>
@@ -192,7 +192,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/shipping-returns')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
                   Warranty Policy
                 </button>
@@ -200,7 +200,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/help')}
-                  className="hover:text-[#EC078A] transition-colors cursor-pointer"
+                  className="hover:text-[#38BDF8] transition-colors cursor-pointer"
                 >
                   FAQ
                 </button>
@@ -210,26 +210,26 @@ export const Footer: React.FC = () => {
 
           {/* Column 4: Contact Us */}
           <div className="space-y-3">
-            <h4 className="text-sm font-bold text-white tracking-wide">Contact Us</h4>
+            <h4 className="text-sm font-bold text-white tracking-wide">Contact MARKDRE</h4>
             <ul className="space-y-2.5 text-xs text-white/75">
               <li className="flex items-center gap-2.5">
-                <Phone className="w-3.5 h-3.5 text-[#EC078A] shrink-0" />
+                <Phone className="w-3.5 h-3.5 text-[#00A3FF] shrink-0" />
                 <a href="tel:+2348012345678" className="hover:text-white transition-colors">
                   +234 801 234 5678
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
-                <Mail className="w-3.5 h-3.5 text-[#EC078A] shrink-0" />
-                <a href="mailto:support@quickchoice.com" className="hover:text-white transition-colors">
-                  support@quickchoice.com
+                <Mail className="w-3.5 h-3.5 text-[#00A3FF] shrink-0" />
+                <a href="mailto:support@markdre.com" className="hover:text-white transition-colors">
+                  support@markdre.com
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
-                <MapPin className="w-3.5 h-3.5 text-[#EC078A] shrink-0 mt-0.5" />
+                <MapPin className="w-3.5 h-3.5 text-[#00A3FF] shrink-0 mt-0.5" />
                 <span>Computer Village & Ikeja Mega Store, Lagos, Nigeria</span>
               </li>
               <li className="flex items-start gap-2.5">
-                <Clock className="w-3.5 h-3.5 text-[#EC078A] shrink-0 mt-0.5" />
+                <Clock className="w-3.5 h-3.5 text-[#00A3FF] shrink-0 mt-0.5" />
                 <div className="text-[11px] leading-tight">
                   <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
                   <p className="text-white/60">Sunday: 10:00 AM - 5:00 PM</p>
@@ -265,7 +265,7 @@ export const Footer: React.FC = () => {
                 <span className="font-black text-emerald-600 tracking-tight text-[11px]">Opay</span>
               </div>
               <div className="bg-white rounded px-2 py-1.5 flex items-center justify-center">
-                <span className="font-bold text-purple-700 tracking-tight text-[10px]">PalmPay</span>
+                <span className="font-bold text-blue-800 tracking-tight text-[10px]">PalmPay</span>
               </div>
             </div>
             <p className="text-[10px] text-white/50 pt-1">
@@ -276,7 +276,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60">
-          <p>© 2026 Quick Choice Telecommunications. All rights reserved.</p>
+          <p>© 2026 MARKDRE Wholesale & Retail. All rights reserved.</p>
           <div className="flex items-center gap-6 text-xs">
             <button
               onClick={() => navigate('/privacy-policy')}
@@ -295,11 +295,11 @@ export const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Floating Scroll-to-Top Button - only visible when scrolled down */}
+      {/* Floating Scroll-to-Top Button */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 w-10 h-10 rounded-full bg-[#EC078A] hover:bg-[#D6067C] text-white shadow-xl flex items-center justify-center transition-transform hover:scale-110 active:scale-95 z-30 cursor-pointer animate-in fade-in duration-300"
+          className="fixed bottom-6 right-6 w-10 h-10 rounded-full bg-[#0052FF] hover:bg-[#003ECC] text-white shadow-xl flex items-center justify-center transition-transform hover:scale-110 active:scale-95 z-30 cursor-pointer animate-in fade-in duration-300"
           aria-label="Scroll to top"
         >
           <ArrowUp className="w-5 h-5" />

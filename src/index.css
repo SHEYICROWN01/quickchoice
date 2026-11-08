@@ -7,15 +7,24 @@
 }
 
 :root {
-  --color-brand-purple: #211078;
-  --color-brand-purple-dark: #14094B;
-  --color-brand-magenta: #EC078A;
-  --color-brand-magenta-dark: #D6067C;
-  --color-brand-lavender: #F5F1FF;
-  --color-brand-pink: #FFF0F8;
-  --color-brand-dark: #17152D;
-  --color-brand-muted: #68677A;
-  --color-brand-border: #EAE7F1;
+  --color-brand-primary: #0052FF;
+  --color-brand-primary-dark: #003ECC;
+  --color-brand-primary-light: #2563EB;
+  --color-brand-cyan: #00A3FF;
+  --color-brand-navy: #0A192F;
+  --color-brand-dark: #0A192F;
+  --color-brand-ice: #F0F6FF;
+  --color-brand-surface: #F8FAFC;
+  --color-brand-border: #DDE7F6;
+  --color-brand-muted: #52668D;
+
+  /* Backward compatible tokens mapped to new MARKDRE Electric Blue */
+  --color-brand-purple: #0052FF;
+  --color-brand-purple-dark: #003ECC;
+  --color-brand-magenta: #0052FF;
+  --color-brand-magenta-dark: #003ECC;
+  --color-brand-lavender: #F0F6FF;
+  --color-brand-pink: #E8F2FF;
 }
 
 /* Custom scrollbar for horizontal product sliders & category bar */

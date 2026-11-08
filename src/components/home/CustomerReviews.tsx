@@ -11,19 +11,19 @@ export const CustomerReviews: React.FC = () => {
       {/* Header */}
       <div className="flex items-center justify-between pb-6">
         <div className="flex items-center gap-3">
-          <div className="w-1.5 h-6 bg-[#EC078A] rounded-full" />
+          <div className="w-1.5 h-6 bg-[#0052FF] rounded-full" />
           <div>
-            <h2 className="text-xl sm:text-2xl font-extrabold text-[#17152D] tracking-tight">
+            <h2 className="text-xl sm:text-2xl font-extrabold text-[#0A192F] tracking-tight">
               What Our Customers Say
             </h2>
-            <p className="text-xs text-[#68677A] font-medium hidden sm:block">
+            <p className="text-xs text-[#64748B] font-medium hidden sm:block">
               Real experiences from verified smartphone buyers and phone dealers across Nigeria.
             </p>
           </div>
         </div>
         <button
           onClick={() => navigate('/reviews')}
-          className="text-xs font-bold text-[#EC078A] hover:text-[#D6067C] flex items-center gap-1 cursor-pointer"
+          className="text-xs font-bold text-[#0052FF] hover:text-[#003ECC] flex items-center gap-1 cursor-pointer"
         >
           <span>View All Reviews</span>
           <ArrowRight className="w-3.5 h-3.5" />
@@ -35,7 +35,7 @@ export const CustomerReviews: React.FC = () => {
         {REVIEWS_DATA.slice(0, 3).map((review) => (
           <div
             key={review.id}
-            className="bg-white rounded-2xl p-6 border border-[#EAE7F1] hover:border-[#EC078A]/40 hover:shadow-md transition-all flex flex-col justify-between relative group"
+            className="bg-white rounded-2xl p-6 border border-[#DCE6F5] hover:border-[#0052FF]/40 hover:shadow-md transition-all flex flex-col justify-between relative group"
           >
             <div>
               {/* Rating stars & verified status */}
@@ -54,19 +54,19 @@ export const CustomerReviews: React.FC = () => {
               </div>
 
               {/* Quote text */}
-              <p className="text-xs sm:text-sm text-[#17152D] leading-relaxed italic mb-4">
+              <p className="text-xs sm:text-sm text-[#0A192F] leading-relaxed italic mb-4">
                 "{review.comment}"
               </p>
             </div>
 
             {/* Author */}
-            <div className="flex items-center gap-3 pt-3 border-t border-[#EAE7F1]/80">
-              <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-[#211078] to-[#EC078A] text-white flex items-center justify-center text-xs font-bold shrink-0">
+            <div className="flex items-center gap-3 pt-3 border-t border-[#DCE6F5]/80">
+              <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-[#0052FF] to-[#0052FF] text-white flex items-center justify-center text-xs font-bold shrink-0">
                 {review.userName.charAt(0)}
               </div>
               <div className="leading-tight">
-                <h4 className="text-xs font-bold text-[#17152D]">{review.userName}</h4>
-                <span className="text-[10px] text-[#68677A] font-medium">{review.date}</span>
+                <h4 className="text-xs font-bold text-[#0A192F]">{review.userName}</h4>
+                <span className="text-[10px] text-[#64748B] font-medium">{review.date}</span>
               </div>
             </div>
           </div>

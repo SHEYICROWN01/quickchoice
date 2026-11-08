@@ -91,7 +91,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
   const faqs = [
     {
       q: 'Is this phone brand new and factory sealed?',
-      a: 'Yes, absolutely. All phones sold by Quick Choice Telecommunications are 100% brand new, authentic, and in their original manufacturer sealed boxes with valid serial numbers and verification.'
+      a: 'Yes, absolutely. All phones sold by MARKDRE Wholesale & Retail are 100% brand new, authentic, and in their original manufacturer sealed boxes with valid serial numbers and verification.'
     },
     {
       q: 'How does nationwide delivery work across Nigeria?',
@@ -103,7 +103,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
     },
     {
       q: 'Do you offer bulk wholesale pricing for phone retailers?',
-      a: 'Yes! Quick Choice is one of the largest wholesalers in Computer Village, Ikeja. We provide special carton rates and wholesale price lists for phone dealers, retailers, and corporate buyers. Click "Request Bulk Price" or visit our Wholesale page.'
+      a: 'Yes! MARKDRE is one of the largest wholesalers in Computer Village, Ikeja. We provide special carton rates and wholesale price lists for phone dealers, retailers, and corporate buyers. Click "Request Bulk Price" or visit our Wholesale page.'
     }
   ];
 
@@ -112,15 +112,15 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
       {/* Breadcrumb Navigation */}
       <div className="bg-white border-b border-[#EAE7F1] py-3 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto flex items-center gap-2 text-xs text-[#68677A] overflow-x-auto no-scrollbar">
-          <button onClick={() => navigate('/')} className="hover:text-[#EC078A] transition-colors cursor-pointer">
+          <button onClick={() => navigate('/')} className="hover:text-[#0052FF] transition-colors cursor-pointer">
             Home
           </button>
           <span>&gt;</span>
-          <button onClick={() => navigate('/phones')} className="hover:text-[#EC078A] transition-colors cursor-pointer">
+          <button onClick={() => navigate('/phones')} className="hover:text-[#0052FF] transition-colors cursor-pointer">
             Phones
           </button>
           <span>&gt;</span>
-          <button onClick={() => navigate(`/brands/${product.brand}`)} className="hover:text-[#EC078A] transition-colors cursor-pointer">
+          <button onClick={() => navigate(`/brands/${product.brand}`)} className="hover:text-[#0052FF] transition-colors cursor-pointer">
             {product.brand}
           </button>
           <span>&gt;</span>
@@ -146,10 +146,10 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
             {/* Brand + Warranty badge row */}
             <div className="flex items-center justify-between gap-2">
               <div className="flex items-center gap-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#211078] bg-[#F5F1FF] px-2.5 py-1 rounded-md">
+                <span className="text-xs font-bold uppercase tracking-wider text-[#0052FF] bg-[#F0F6FF] px-2.5 py-1 rounded-md">
                   {product.brand}
                 </span>
-                <span className="text-[11px] font-bold text-[#EC078A] bg-[#FFF0F8] border border-[#F9D6EA] px-2 py-0.5 rounded-full">
+                <span className="text-[11px] font-bold text-[#0052FF] bg-[#E8F2FF] border border-[#C7DCFC] px-2 py-0.5 rounded-full">
                   Official Warranty
                 </span>
               </div>
@@ -160,16 +160,16 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                   onClick={() => toggleWishlist(product.id)}
                   className={`p-2 rounded-full border transition-colors cursor-pointer ${
                     isWishlisted
-                      ? 'bg-[#FFF0F8] border-[#EC078A] text-[#EC078A]'
-                      : 'bg-white border-[#EAE7F1] text-[#68677A] hover:text-[#EC078A]'
+                      ? 'bg-[#E8F2FF] border-[#0052FF] text-[#0052FF]'
+                      : 'bg-white border-[#EAE7F1] text-[#68677A] hover:text-[#0052FF]'
                   }`}
                   aria-label="Wishlist"
                 >
-                  <Heart className={`w-4 h-4 ${isWishlisted ? 'fill-[#EC078A]' : ''}`} />
+                  <Heart className={`w-4 h-4 ${isWishlisted ? 'fill-[#0052FF]' : ''}`} />
                 </button>
                 <button
                   onClick={handleShare}
-                  className="p-2 rounded-full border border-[#EAE7F1] bg-white text-[#68677A] hover:text-[#211078] transition-colors cursor-pointer"
+                  className="p-2 rounded-full border border-[#EAE7F1] bg-white text-[#68677A] hover:text-[#0052FF] transition-colors cursor-pointer"
                   aria-label="Share"
                 >
                   <Share2 className="w-4 h-4" />
@@ -201,7 +201,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
             {/* Price Box */}
             <div className="bg-white p-4 rounded-xl border border-[#EAE7F1] space-y-2">
               <div className="flex items-baseline gap-3">
-                <span className="text-2xl sm:text-3xl font-black text-[#211078] tabular-nums">
+                <span className="text-2xl sm:text-3xl font-black text-[#0052FF] tabular-nums">
                   {formatNaira(product.price)}
                 </span>
                 {product.originalPrice && (
@@ -210,14 +210,14 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                   </span>
                 )}
                 {product.discountPercentage && (
-                  <span className="bg-[#EC078A] text-white text-[11px] font-extrabold px-2 py-0.5 rounded">
+                  <span className="bg-[#0052FF] text-white text-[11px] font-extrabold px-2 py-0.5 rounded">
                     {product.discountPercentage}% OFF
                   </span>
                 )}
               </div>
 
               {product.specialOffer && (
-                <div className="bg-[#FFF0F8] border border-[#F9D6EA] p-2.5 rounded-lg text-xs font-semibold text-[#EC078A] flex items-center gap-2">
+                <div className="bg-[#E8F2FF] border border-[#C7DCFC] p-2.5 rounded-lg text-xs font-semibold text-[#0052FF] flex items-center gap-2">
                   <span>{product.specialOffer}</span>
                 </div>
               )}
@@ -227,7 +227,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
             {product.storageOptions && product.storageOptions.length > 0 && (
               <div>
                 <label className="block text-xs font-bold text-[#17152D] mb-2">
-                  Storage Capacity: <span className="text-[#EC078A]">{selectedStorage}</span>
+                  Storage Capacity: <span className="text-[#0052FF]">{selectedStorage}</span>
                 </label>
                 <div className="flex items-center gap-2 flex-wrap">
                   {product.storageOptions.map((opt) => (
@@ -236,8 +236,8 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                       onClick={() => setSelectedStorage(opt)}
                       className={`px-4 py-2 rounded-lg text-xs font-bold border transition-all cursor-pointer ${
                         selectedStorage === opt
-                          ? 'border-[#EC078A] bg-[#FFF0F8] text-[#EC078A] shadow-xs ring-1 ring-[#EC078A]'
-                          : 'border-[#EAE7F1] bg-white text-[#17152D] hover:border-[#211078]/40'
+                          ? 'border-[#0052FF] bg-[#E8F2FF] text-[#0052FF] shadow-xs ring-1 ring-[#0052FF]'
+                          : 'border-[#EAE7F1] bg-white text-[#17152D] hover:border-[#0052FF]/40'
                       }`}
                     >
                       {opt}
@@ -251,7 +251,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
             {product.colors && product.colors.length > 0 && (
               <div>
                 <label className="block text-xs font-bold text-[#17152D] mb-2">
-                  Color: <span className="text-[#EC078A]">{selectedColor}</span>
+                  Color: <span className="text-[#0052FF]">{selectedColor}</span>
                 </label>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                   {product.colors.map((color) => {
@@ -262,8 +262,8 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                         onClick={() => setSelectedColor(color.name)}
                         className={`p-2 rounded-xl border flex flex-col items-center gap-1.5 transition-all cursor-pointer text-center ${
                           isSelected
-                            ? 'border-[#EC078A] bg-[#FFF0F8] ring-1 ring-[#EC078A]'
-                            : 'border-[#EAE7F1] bg-white hover:border-[#211078]/30'
+                            ? 'border-[#0052FF] bg-[#E8F2FF] ring-1 ring-[#0052FF]'
+                            : 'border-[#EAE7F1] bg-white hover:border-[#0052FF]/30'
                         }`}
                       >
                         <span
@@ -287,7 +287,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                 <div className="flex items-center border border-[#EAE7F1] bg-white rounded-xl overflow-hidden shrink-0">
                   <button
                     onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-                    className="p-2.5 hover:bg-[#F5F1FF] text-[#17152D] transition-colors cursor-pointer"
+                    className="p-2.5 hover:bg-[#F0F6FF] text-[#17152D] transition-colors cursor-pointer"
                     aria-label="Decrease quantity"
                   >
                     <Minus className="w-3.5 h-3.5" />
@@ -297,7 +297,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                   </span>
                   <button
                     onClick={() => setQuantity((q) => q + 1)}
-                    className="p-2.5 hover:bg-[#F5F1FF] text-[#17152D] transition-colors cursor-pointer"
+                    className="p-2.5 hover:bg-[#F0F6FF] text-[#17152D] transition-colors cursor-pointer"
                     aria-label="Increase quantity"
                   >
                     <Plus className="w-3.5 h-3.5" />
@@ -321,7 +321,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <button
                   onClick={handleAddToCart}
-                  className="py-3.5 px-4 bg-[#EC078A] hover:bg-[#D6067C] active:scale-98 text-white text-xs font-extrabold rounded-xl shadow-md shadow-[#EC078A]/20 flex items-center justify-center gap-2 transition-all cursor-pointer"
+                  className="py-3.5 px-4 bg-[#0052FF] hover:bg-[#003ECC] active:scale-98 text-white text-xs font-extrabold rounded-xl shadow-md shadow-[#0052FF]/20 flex items-center justify-center gap-2 transition-all cursor-pointer"
                 >
                   <ShoppingCart className="w-4 h-4" />
                   <span>Add to Cart</span>
@@ -329,9 +329,9 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
 
                 <button
                   onClick={handleBuyNow}
-                  className="py-3.5 px-4 bg-[#211078] hover:bg-[#14094B] active:scale-98 text-white text-xs font-extrabold rounded-xl shadow-md flex items-center justify-center gap-2 transition-all cursor-pointer"
+                  className="py-3.5 px-4 bg-[#0052FF] hover:bg-[#003ECC] active:scale-98 text-white text-xs font-extrabold rounded-xl shadow-md flex items-center justify-center gap-2 transition-all cursor-pointer"
                 >
-                  <Zap className="w-4 h-4 text-[#EC078A]" />
+                  <Zap className="w-4 h-4 text-[#0052FF]" />
                   <span>Buy Now</span>
                 </button>
               </div>
@@ -340,19 +340,19 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
             {/* 4 Trust Assurances */}
             <div className="grid grid-cols-2 gap-2 pt-2 border-t border-[#EAE7F1]">
               <div className="flex items-center gap-2 p-2 rounded-lg bg-white border border-[#EAE7F1] text-[11px]">
-                <ShieldCheck className="w-4 h-4 text-[#EC078A] shrink-0" />
+                <ShieldCheck className="w-4 h-4 text-[#0052FF] shrink-0" />
                 <span className="font-semibold text-[#17152D]">100% Original</span>
               </div>
               <div className="flex items-center gap-2 p-2 rounded-lg bg-white border border-[#EAE7F1] text-[11px]">
-                <Truck className="w-4 h-4 text-[#EC078A] shrink-0" />
+                <Truck className="w-4 h-4 text-[#0052FF] shrink-0" />
                 <span className="font-semibold text-[#17152D]">1-3 Days Delivery</span>
               </div>
               <div className="flex items-center gap-2 p-2 rounded-lg bg-white border border-[#EAE7F1] text-[11px]">
-                <CreditCard className="w-4 h-4 text-[#EC078A] shrink-0" />
+                <CreditCard className="w-4 h-4 text-[#0052FF] shrink-0" />
                 <span className="font-semibold text-[#17152D]">Secure Payment</span>
               </div>
               <div className="flex items-center gap-2 p-2 rounded-lg bg-white border border-[#EAE7F1] text-[11px]">
-                <RotateCcw className="w-4 h-4 text-[#EC078A] shrink-0" />
+                <RotateCcw className="w-4 h-4 text-[#0052FF] shrink-0" />
                 <span className="font-semibold text-[#17152D]">7 Days Return</span>
               </div>
             </div>
@@ -370,7 +370,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
             {/* What's in the Box Card */}
             <div className="bg-white rounded-2xl border border-[#EAE7F1] p-5 space-y-3 shadow-xs">
               <div className="flex items-center gap-2 pb-1 border-b border-[#EAE7F1]">
-                <Package className="w-4 h-4 text-[#211078]" />
+                <Package className="w-4 h-4 text-[#0052FF]" />
                 <h4 className="text-xs font-bold text-[#17152D] uppercase tracking-wider">
                   What's in the Box?
                 </h4>
@@ -389,7 +389,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
             {/* Delivery & Returns Info Card */}
             <div className="bg-white rounded-2xl border border-[#EAE7F1] p-5 space-y-3 shadow-xs">
               <div className="flex items-center gap-2 pb-1 border-b border-[#EAE7F1]">
-                <Truck className="w-4 h-4 text-[#211078]" />
+                <Truck className="w-4 h-4 text-[#0052FF]" />
                 <h4 className="text-xs font-bold text-[#17152D] uppercase tracking-wider">
                   Delivery &amp; Returns
                 </h4>
@@ -431,7 +431,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                   onClick={() => setActiveTab(tab.id as any)}
                   className={`py-3.5 px-3 sm:px-4 text-xs font-bold whitespace-nowrap border-b-2 transition-all cursor-pointer ${
                     isActive
-                      ? 'border-[#EC078A] text-[#EC078A]'
+                      ? 'border-[#0052FF] text-[#0052FF]'
                       : 'border-transparent text-[#68677A] hover:text-[#17152D]'
                   }`}
                 >
@@ -462,7 +462,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                       key={idx}
                       className="bg-[#F8F7FA] p-5 rounded-xl border border-[#EAE7F1] space-y-1.5"
                     >
-                      <div className="w-8 h-8 rounded-lg bg-[#FFF0F8] text-[#EC078A] flex items-center justify-center font-bold">
+                      <div className="w-8 h-8 rounded-lg bg-[#E8F2FF] text-[#0052FF] flex items-center justify-center font-bold">
                         ★
                       </div>
                       <h4 className="text-xs font-bold text-[#17152D]">{feat.title}</h4>
@@ -476,7 +476,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                 {/* Promotional banner inside overview */}
                 <div className="relative rounded-2xl overflow-hidden bg-gradient-to-r from-[#170B49] to-[#2B0E68] text-white p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
                   <div className="space-y-2 max-w-md">
-                    <span className="text-[11px] font-bold text-[#EC078A] uppercase tracking-wider">
+                    <span className="text-[11px] font-bold text-[#0052FF] uppercase tracking-wider">
                       Flagship Performance
                     </span>
                     <h3 className="text-xl sm:text-2xl font-black">
@@ -488,7 +488,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                   </div>
                   <button
                     onClick={handleAddToCart}
-                    className="px-6 py-3 bg-[#EC078A] hover:bg-[#D6067C] text-white text-xs font-bold rounded-xl transition-colors cursor-pointer shrink-0"
+                    className="px-6 py-3 bg-[#0052FF] hover:bg-[#003ECC] text-white text-xs font-bold rounded-xl transition-colors cursor-pointer shrink-0"
                   >
                     Add to Cart Now
                   </button>
@@ -515,7 +515,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                 <div className="divide-y divide-[#EAE7F1] border border-[#EAE7F1] rounded-xl overflow-hidden bg-white">
                   {product.boxContents.map((item, idx) => (
                     <div key={idx} className="p-4 flex items-center gap-3 text-xs font-bold text-[#17152D]">
-                      <CheckCircle2 className="w-4 h-4 text-[#EC078A]" />
+                      <CheckCircle2 className="w-4 h-4 text-[#0052FF]" />
                       <span>{item}</span>
                     </div>
                   ))}
@@ -544,7 +544,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
 
                   <button
                     onClick={() => showToast('Review submission modal opened (Demo mode)', 'info')}
-                    className="px-4 py-2 bg-[#211078] hover:bg-[#14094B] text-white text-xs font-bold rounded-lg cursor-pointer transition-colors"
+                    className="px-4 py-2 bg-[#0052FF] hover:bg-[#003ECC] text-white text-xs font-bold rounded-lg cursor-pointer transition-colors"
                   >
                     Write a Review
                   </button>
@@ -564,7 +564,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                       <p className="text-xs text-[#17152D] leading-relaxed italic">
                         "{rev.comment}"
                       </p>
-                      <div className="text-[11px] font-bold text-[#211078] flex items-center gap-1.5">
+                      <div className="text-[11px] font-bold text-[#0052FF] flex items-center gap-1.5">
                         <span>{rev.userName}</span>
                         {rev.verified && (
                           <span className="text-[10px] text-emerald-600 bg-emerald-50 px-1.5 py-0.2 rounded font-semibold">
@@ -585,15 +585,15 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                   Shipping Policies &amp; Return Guidelines
                 </h3>
                 <p>
-                  At Quick Choice Telecommunications, orders are fulfilled with speed and full transit insurance. We partner with leading courier carriers to ensure safe delivery across Nigeria.
+                  At MARKDRE Wholesale & Retail, orders are fulfilled with speed and full transit insurance. We partner with leading courier carriers to ensure safe delivery across Nigeria.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                   <div className="p-4 rounded-xl border border-[#EAE7F1] bg-[#F8F7FA]">
-                    <h4 className="font-bold text-[#211078] mb-1">Lagos &amp; Abuja Metro</h4>
+                    <h4 className="font-bold text-[#0052FF] mb-1">Lagos &amp; Abuja Metro</h4>
                     <p className="text-xs">Same-day delivery available for orders placed before 1:00 PM. Standard doorstep delivery in 24 hours.</p>
                   </div>
                   <div className="p-4 rounded-xl border border-[#EAE7F1] bg-[#F8F7FA]">
-                    <h4 className="font-bold text-[#211078] mb-1">Other States Across Nigeria</h4>
+                    <h4 className="font-bold text-[#0052FF] mb-1">Other States Across Nigeria</h4>
                     <p className="text-xs">Dispatched via air &amp; ground express. Estimated arrival within 1 to 3 business days with SMS tracking.</p>
                   </div>
                 </div>
@@ -615,10 +615,10 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
                     >
                       <button
                         onClick={() => setOpenFaq(isOpen ? null : index)}
-                        className="w-full text-left p-4 text-xs font-bold text-[#17152D] hover:bg-[#F5F1FF] flex items-center justify-between transition-colors cursor-pointer"
+                        className="w-full text-left p-4 text-xs font-bold text-[#17152D] hover:bg-[#F0F6FF] flex items-center justify-between transition-colors cursor-pointer"
                       >
                         <span>{faq.q}</span>
-                        <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180 text-[#EC078A]' : ''}`} />
+                        <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180 text-[#0052FF]' : ''}`} />
                       </button>
                       {isOpen && (
                         <div className="px-4 pb-4 text-xs text-[#68677A] leading-relaxed border-t border-[#EAE7F1]/60 pt-3">
@@ -637,14 +637,14 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
         <section className="mt-16">
           <div className="flex items-center justify-between pb-6">
             <div className="flex items-center gap-3">
-              <div className="w-1.5 h-6 bg-[#EC078A] rounded-full" />
+              <div className="w-1.5 h-6 bg-[#0052FF] rounded-full" />
               <h2 className="text-xl sm:text-2xl font-extrabold text-[#17152D] tracking-tight">
                 You May Also Like
               </h2>
             </div>
             <button
               onClick={() => navigate('/phones')}
-              className="text-xs font-bold text-[#EC078A] hover:text-[#D6067C] flex items-center gap-1 cursor-pointer"
+              className="text-xs font-bold text-[#0052FF] hover:text-[#003ECC] flex items-center gap-1 cursor-pointer"
             >
               <span>View All</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -666,7 +666,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
             <span className="text-xs font-bold text-[#17152D] block truncate max-w-[160px]">
               {product.name}
             </span>
-            <span className="text-sm font-extrabold text-[#211078] tabular-nums">
+            <span className="text-sm font-extrabold text-[#0052FF] tabular-nums">
               {formatNaira(product.price)}
             </span>
           </div>
@@ -674,14 +674,14 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
           <div className="flex items-center gap-2">
             <button
               onClick={handleAddToCart}
-              className="px-4 py-2.5 bg-[#EC078A] hover:bg-[#D6067C] active:scale-95 text-white text-xs font-bold rounded-lg shadow-md flex items-center gap-1.5 cursor-pointer"
+              className="px-4 py-2.5 bg-[#0052FF] hover:bg-[#003ECC] active:scale-95 text-white text-xs font-bold rounded-lg shadow-md flex items-center gap-1.5 cursor-pointer"
             >
               <ShoppingCart className="w-3.5 h-3.5" />
               <span>Add to Cart</span>
             </button>
             <button
               onClick={handleBuyNow}
-              className="px-4 py-2.5 bg-[#211078] text-white text-xs font-bold rounded-lg cursor-pointer"
+              className="px-4 py-2.5 bg-[#0052FF] text-white text-xs font-bold rounded-lg cursor-pointer"
             >
               Buy Now
             </button>

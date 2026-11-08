@@ -32,8 +32,8 @@ export interface Product {
   id: string;
   slug: string;
   name: string;
-  brand: 'Apple' | 'Samsung' | 'Tecno' | 'Infinix' | 'itel' | 'Xiaomi' | 'Google' | 'Nothing' | 'Other';
-  category: 'smartphones' | 'tablets' | 'accessories' | 'deals';
+  brand: 'Apple' | 'Samsung' | 'Tecno' | 'Infinix' | 'itel' | 'Xiaomi' | 'Google' | 'Nothing' | 'Hisense' | 'LG' | 'Haier Thermocool' | 'Scanfrost' | 'Maxi' | 'Other';
+  category: 'smartphones' | 'tablets' | 'accessories' | 'deals' | 'electronics' | 'tvs' | 'refrigerators' | 'appliances' | 'air-conditioners';
   tag?: 'New' | 'Hot' | 'Best Seller' | '7% OFF' | '10% OFF' | 'Limited Stock';
   officialBadge?: string;
   price: number; // in NGN

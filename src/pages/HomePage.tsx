@@ -4,6 +4,7 @@ import { CategoryStrip } from '../components/home/CategoryStrip';
 import { PromoBanners } from '../components/home/PromoBanners';
 import { TrustFeatures } from '../components/home/TrustFeatures';
 import { FeaturedPhones } from '../components/home/FeaturedPhones';
+import { HomeElectronicsSection } from '../components/home/HomeElectronicsSection';
 import { TradeInBanner } from '../components/home/TradeInBanner';
 import { BrandSelector } from '../components/home/BrandSelector';
 import { AccessoriesWholesalePanels } from '../components/home/AccessoriesWholesalePanels';
@@ -30,6 +31,9 @@ export const HomePage: React.FC = () => {
       {/* 5. Featured Phones Section with Live Brand Filters */}
       <FeaturedPhones />
 
+      {/* 6. Electronics & Home Appliances Section (Smart TVs, Fridges, Freezers, ACs) */}
+      <HomeElectronicsSection />
+
       {/* 6. Trade-In & Upgrade Banner */}
       <TradeInBanner />
 
@@ -39,7 +43,7 @@ export const HomePage: React.FC = () => {
       {/* 8. Accessories & Wholesale Dual Promotion Panels */}
       <AccessoriesWholesalePanels />
 
-      {/* 9. Why Choose Quick Choice? */}
+      {/* 9. Why Choose MARKDRE? */}
       <WhyChooseUs />
 
       {/* 10. Customer Reviews ("What Our Customers Say") */}
